@@ -1,4 +1,4 @@
--- Protected by Mnx Obfuscator | Public Enemy
+-- Protected by Noks Obfuscator | Public Enemy
 local nFyxDM87_5T=tostring(99)
 local hGon5XTO8tvEq4Vgr_=string.len("iLaT")
 local kyBKZT05Ha=type(nil)
