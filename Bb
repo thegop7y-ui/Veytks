@@ -1,0 +1,4606 @@
+-- Mnx V4 / virtualized protected runtime
+local ioDZzY2j7FK2E=bit32.bxor
+local qOcDLdmbBbh=type
+if qOcDLdmbBbh(loadstring)~="function" or qOcDLdmbBbh(string.byte)~="function" or qOcDLdmbBbh(string.char)~="function" then return end
+local pMznofxDutN1={"13e8d27280ad877b76"}
+local pMznofxDutN1r={1}
+local pMznofxDutN1s={}
+for i=1,#pMznofxDutN1r do pMznofxDutN1s[pMznofxDutN1r[i]]=pMznofxDutN1[i] end
+pMznofxDutN1=table.concat(pMznofxDutN1s)
+local sC64_vtHo4={"0fee76a161a1d258"}
+local sC64_vtHo4r={1}
+local sC64_vtHo4s={}
+for i=1,#sC64_vtHo4r do sC64_vtHo4s[sC64_vtHo4r[i]]=sC64_vtHo4[i] end
+sC64_vtHo4=table.concat(sC64_vtHo4s)
+local jxiwTWmbZdw={}
+local iokuPX4nxvw19wnt={}
+local rlLwdHOrqiRIwq=0
+local wY5lG_NlYnhPk7uvC=1
+local h1CcIpWJi=function(s,a,b)
+ local id=0
+ local opcode=0
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x+y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local h1CcIpWJi_meta={id=0,opcode=0}
+h1CcIpWJi_meta.apply=h1CcIpWJi
+function h1CcIpWJi_meta.verify(v) return type(v)=="number" end
+local tjMZeVOzbo=function(s,a,b)
+ local id=1
+ local opcode=1
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x-y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local tjMZeVOzbo_meta={id=1,opcode=1}
+tjMZeVOzbo_meta.apply=tjMZeVOzbo
+function tjMZeVOzbo_meta.verify(v) return type(v)=="number" end
+local o_ab544fnmS742B=function(s,a,b)
+ local id=2
+ local opcode=2
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x*y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local o_ab544fnmS742B_meta={id=2,opcode=2}
+o_ab544fnmS742B_meta.apply=o_ab544fnmS742B
+function o_ab544fnmS742B_meta.verify(v) return type(v)=="number" end
+local d8PFNMtCeZdkhPmFc0=function(s,a,b)
+ local id=3
+ local opcode=3
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local m=(y==0 and 1 or y); local r=x%m
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local d8PFNMtCeZdkhPmFc0_meta={id=3,opcode=3}
+d8PFNMtCeZdkhPmFc0_meta.apply=d8PFNMtCeZdkhPmFc0
+function d8PFNMtCeZdkhPmFc0_meta.verify(v) return type(v)=="number" end
+local lg3rySwXXSulphNUmu=function(s,a,b)
+ local id=4
+ local opcode=4
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bxor(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local lg3rySwXXSulphNUmu_meta={id=4,opcode=4}
+lg3rySwXXSulphNUmu_meta.apply=lg3rySwXXSulphNUmu
+function lg3rySwXXSulphNUmu_meta.verify(v) return type(v)=="number" end
+local wtuYfMYyN_Qr_3RaMi=function(s,a,b)
+ local id=5
+ local opcode=5
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.band(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local wtuYfMYyN_Qr_3RaMi_meta={id=5,opcode=5}
+wtuYfMYyN_Qr_3RaMi_meta.apply=wtuYfMYyN_Qr_3RaMi
+function wtuYfMYyN_Qr_3RaMi_meta.verify(v) return type(v)=="number" end
+local g6H444lkP_Z2bPRK=function(s,a,b)
+ local id=6
+ local opcode=6
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bor(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local g6H444lkP_Z2bPRK_meta={id=6,opcode=6}
+g6H444lkP_Z2bPRK_meta.apply=g6H444lkP_Z2bPRK
+function g6H444lkP_Z2bPRK_meta.verify(v) return type(v)=="number" end
+local gmFFHpmyqZf7pbu=function(s,a,b)
+ local id=7
+ local opcode=7
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bnot(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local gmFFHpmyqZf7pbu_meta={id=7,opcode=7}
+gmFFHpmyqZf7pbu_meta.apply=gmFFHpmyqZf7pbu
+function gmFFHpmyqZf7pbu_meta.verify(v) return type(v)=="number" end
+local pAAnAIpvRkizrUE=function(s,a,b)
+ local id=8
+ local opcode=8
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.lshift(x,y%32)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local pAAnAIpvRkizrUE_meta={id=8,opcode=8}
+pAAnAIpvRkizrUE_meta.apply=pAAnAIpvRkizrUE
+function pAAnAIpvRkizrUE_meta.verify(v) return type(v)=="number" end
+local adwdE8mC_f=function(s,a,b)
+ local id=9
+ local opcode=9
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.rshift(x,y%32)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local adwdE8mC_f_meta={id=9,opcode=9}
+adwdE8mC_f_meta.apply=adwdE8mC_f
+function adwdE8mC_f_meta.verify(v) return type(v)=="number" end
+local twEvpmU4ElUZ3yC=function(s,a,b)
+ local id=10
+ local opcode=10
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=math.floor(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local twEvpmU4ElUZ3yC_meta={id=10,opcode=10}
+twEvpmU4ElUZ3yC_meta.apply=twEvpmU4ElUZ3yC
+function twEvpmU4ElUZ3yC_meta.verify(v) return type(v)=="number" end
+local fesgsa7WTv8ApU43W=function(s,a,b)
+ local id=11
+ local opcode=11
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=math.abs(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local fesgsa7WTv8ApU43W_meta={id=11,opcode=11}
+fesgsa7WTv8ApU43W_meta.apply=fesgsa7WTv8ApU43W
+function fesgsa7WTv8ApU43W_meta.verify(v) return type(v)=="number" end
+local vdGl25FAbj3Y0C=function(s,a,b)
+ local id=12
+ local opcode=12
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x==y) and 1 or 0
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local vdGl25FAbj3Y0C_meta={id=12,opcode=12}
+vdGl25FAbj3Y0C_meta.apply=vdGl25FAbj3Y0C
+function vdGl25FAbj3Y0C_meta.verify(v) return type(v)=="number" end
+local wY7KZI9Dhnpp=function(s,a,b)
+ local id=13
+ local opcode=13
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x~=y) and 1 or 0
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local wY7KZI9Dhnpp_meta={id=13,opcode=13}
+wY7KZI9Dhnpp_meta.apply=wY7KZI9Dhnpp
+function wY7KZI9Dhnpp_meta.verify(v) return type(v)=="number" end
+local moeEEuI8Slnd1mq=function(s,a,b)
+ local id=14
+ local opcode=14
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local moeEEuI8Slnd1mq_meta={id=14,opcode=14}
+moeEEuI8Slnd1mq_meta.apply=moeEEuI8Slnd1mq
+function moeEEuI8Slnd1mq_meta.verify(v) return type(v)=="number" end
+local rv2BbwixffyF8kx5wh=function(s,a,b)
+ local id=15
+ local opcode=15
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x+y)%256
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local rv2BbwixffyF8kx5wh_meta={id=15,opcode=15}
+rv2BbwixffyF8kx5wh_meta.apply=rv2BbwixffyF8kx5wh
+function rv2BbwixffyF8kx5wh_meta.verify(v) return type(v)=="number" end
+local dtP08zoYuX=function(s,a,b)
+ local id=16
+ local opcode=0
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x+y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local dtP08zoYuX_meta={id=16,opcode=0}
+dtP08zoYuX_meta.apply=dtP08zoYuX
+function dtP08zoYuX_meta.verify(v) return type(v)=="number" end
+local bRLHyfclxSybgJm34=function(s,a,b)
+ local id=17
+ local opcode=1
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x-y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local bRLHyfclxSybgJm34_meta={id=17,opcode=1}
+bRLHyfclxSybgJm34_meta.apply=bRLHyfclxSybgJm34
+function bRLHyfclxSybgJm34_meta.verify(v) return type(v)=="number" end
+local cPA1Mn0rc=function(s,a,b)
+ local id=18
+ local opcode=2
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x*y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local cPA1Mn0rc_meta={id=18,opcode=2}
+cPA1Mn0rc_meta.apply=cPA1Mn0rc
+function cPA1Mn0rc_meta.verify(v) return type(v)=="number" end
+local jQBP5Le0WoMY=function(s,a,b)
+ local id=19
+ local opcode=3
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local m=(y==0 and 1 or y); local r=x%m
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local jQBP5Le0WoMY_meta={id=19,opcode=3}
+jQBP5Le0WoMY_meta.apply=jQBP5Le0WoMY
+function jQBP5Le0WoMY_meta.verify(v) return type(v)=="number" end
+local do_yLcVJPW=function(s,a,b)
+ local id=20
+ local opcode=4
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bxor(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local do_yLcVJPW_meta={id=20,opcode=4}
+do_yLcVJPW_meta.apply=do_yLcVJPW
+function do_yLcVJPW_meta.verify(v) return type(v)=="number" end
+local smo48oLIi2B6bZAcIh=function(s,a,b)
+ local id=21
+ local opcode=5
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.band(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local smo48oLIi2B6bZAcIh_meta={id=21,opcode=5}
+smo48oLIi2B6bZAcIh_meta.apply=smo48oLIi2B6bZAcIh
+function smo48oLIi2B6bZAcIh_meta.verify(v) return type(v)=="number" end
+local jzN3vPiSu=function(s,a,b)
+ local id=22
+ local opcode=6
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bor(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local jzN3vPiSu_meta={id=22,opcode=6}
+jzN3vPiSu_meta.apply=jzN3vPiSu
+function jzN3vPiSu_meta.verify(v) return type(v)=="number" end
+local t7gDkEvBFF=function(s,a,b)
+ local id=23
+ local opcode=7
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bnot(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local t7gDkEvBFF_meta={id=23,opcode=7}
+t7gDkEvBFF_meta.apply=t7gDkEvBFF
+function t7gDkEvBFF_meta.verify(v) return type(v)=="number" end
+local gWs3mtknr=function(s,a,b)
+ local id=24
+ local opcode=8
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.lshift(x,y%32)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local gWs3mtknr_meta={id=24,opcode=8}
+gWs3mtknr_meta.apply=gWs3mtknr
+function gWs3mtknr_meta.verify(v) return type(v)=="number" end
+local rTBHIBdPZpiXQ=function(s,a,b)
+ local id=25
+ local opcode=9
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.rshift(x,y%32)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local rTBHIBdPZpiXQ_meta={id=25,opcode=9}
+rTBHIBdPZpiXQ_meta.apply=rTBHIBdPZpiXQ
+function rTBHIBdPZpiXQ_meta.verify(v) return type(v)=="number" end
+local iDsyFnHHnnG=function(s,a,b)
+ local id=26
+ local opcode=10
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=math.floor(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local iDsyFnHHnnG_meta={id=26,opcode=10}
+iDsyFnHHnnG_meta.apply=iDsyFnHHnnG
+function iDsyFnHHnnG_meta.verify(v) return type(v)=="number" end
+local qRxP3LQAkLTRLIt=function(s,a,b)
+ local id=27
+ local opcode=11
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=math.abs(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local qRxP3LQAkLTRLIt_meta={id=27,opcode=11}
+qRxP3LQAkLTRLIt_meta.apply=qRxP3LQAkLTRLIt
+function qRxP3LQAkLTRLIt_meta.verify(v) return type(v)=="number" end
+local cMNUPXqgHNn30_oKFC=function(s,a,b)
+ local id=28
+ local opcode=12
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x==y) and 1 or 0
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local cMNUPXqgHNn30_oKFC_meta={id=28,opcode=12}
+cMNUPXqgHNn30_oKFC_meta.apply=cMNUPXqgHNn30_oKFC
+function cMNUPXqgHNn30_oKFC_meta.verify(v) return type(v)=="number" end
+local huBcrUqd3Va3zm=function(s,a,b)
+ local id=29
+ local opcode=13
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x~=y) and 1 or 0
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local huBcrUqd3Va3zm_meta={id=29,opcode=13}
+huBcrUqd3Va3zm_meta.apply=huBcrUqd3Va3zm
+function huBcrUqd3Va3zm_meta.verify(v) return type(v)=="number" end
+local s9qcEQ0D1BGgviM=function(s,a,b)
+ local id=30
+ local opcode=14
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local s9qcEQ0D1BGgviM_meta={id=30,opcode=14}
+s9qcEQ0D1BGgviM_meta.apply=s9qcEQ0D1BGgviM
+function s9qcEQ0D1BGgviM_meta.verify(v) return type(v)=="number" end
+local qEk6TGy8dDEzQ1=function(s,a,b)
+ local id=31
+ local opcode=15
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x+y)%256
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local qEk6TGy8dDEzQ1_meta={id=31,opcode=15}
+qEk6TGy8dDEzQ1_meta.apply=qEk6TGy8dDEzQ1
+function qEk6TGy8dDEzQ1_meta.verify(v) return type(v)=="number" end
+local rrjkOJ4rtiRG=function(s,a,b)
+ local id=32
+ local opcode=0
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x+y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local rrjkOJ4rtiRG_meta={id=32,opcode=0}
+rrjkOJ4rtiRG_meta.apply=rrjkOJ4rtiRG
+function rrjkOJ4rtiRG_meta.verify(v) return type(v)=="number" end
+local wypZ98TCc_CF8cil9=function(s,a,b)
+ local id=33
+ local opcode=1
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x-y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local wypZ98TCc_CF8cil9_meta={id=33,opcode=1}
+wypZ98TCc_CF8cil9_meta.apply=wypZ98TCc_CF8cil9
+function wypZ98TCc_CF8cil9_meta.verify(v) return type(v)=="number" end
+local ahlfqQ1si=function(s,a,b)
+ local id=34
+ local opcode=2
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x*y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local ahlfqQ1si_meta={id=34,opcode=2}
+ahlfqQ1si_meta.apply=ahlfqQ1si
+function ahlfqQ1si_meta.verify(v) return type(v)=="number" end
+local iYuEh4rnUrlH=function(s,a,b)
+ local id=35
+ local opcode=3
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local m=(y==0 and 1 or y); local r=x%m
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local iYuEh4rnUrlH_meta={id=35,opcode=3}
+iYuEh4rnUrlH_meta.apply=iYuEh4rnUrlH
+function iYuEh4rnUrlH_meta.verify(v) return type(v)=="number" end
+local u2g8ZD9gE_R0jInNu=function(s,a,b)
+ local id=36
+ local opcode=4
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bxor(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local u2g8ZD9gE_R0jInNu_meta={id=36,opcode=4}
+u2g8ZD9gE_R0jInNu_meta.apply=u2g8ZD9gE_R0jInNu
+function u2g8ZD9gE_R0jInNu_meta.verify(v) return type(v)=="number" end
+local fUmTx8L7Q9UZsw7V=function(s,a,b)
+ local id=37
+ local opcode=5
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.band(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local fUmTx8L7Q9UZsw7V_meta={id=37,opcode=5}
+fUmTx8L7Q9UZsw7V_meta.apply=fUmTx8L7Q9UZsw7V
+function fUmTx8L7Q9UZsw7V_meta.verify(v) return type(v)=="number" end
+local dRqFa4DuIKCDAJ4=function(s,a,b)
+ local id=38
+ local opcode=6
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bor(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local dRqFa4DuIKCDAJ4_meta={id=38,opcode=6}
+dRqFa4DuIKCDAJ4_meta.apply=dRqFa4DuIKCDAJ4
+function dRqFa4DuIKCDAJ4_meta.verify(v) return type(v)=="number" end
+local cPWPmO_mtN=function(s,a,b)
+ local id=39
+ local opcode=7
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bnot(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local cPWPmO_mtN_meta={id=39,opcode=7}
+cPWPmO_mtN_meta.apply=cPWPmO_mtN
+function cPWPmO_mtN_meta.verify(v) return type(v)=="number" end
+local y59xiL_qjouUM=function(s,a,b)
+ local id=40
+ local opcode=8
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.lshift(x,y%32)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local y59xiL_qjouUM_meta={id=40,opcode=8}
+y59xiL_qjouUM_meta.apply=y59xiL_qjouUM
+function y59xiL_qjouUM_meta.verify(v) return type(v)=="number" end
+local ajkHjEd_5dSEb0Bn7=function(s,a,b)
+ local id=41
+ local opcode=9
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.rshift(x,y%32)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local ajkHjEd_5dSEb0Bn7_meta={id=41,opcode=9}
+ajkHjEd_5dSEb0Bn7_meta.apply=ajkHjEd_5dSEb0Bn7
+function ajkHjEd_5dSEb0Bn7_meta.verify(v) return type(v)=="number" end
+local aFeCiGoFpib=function(s,a,b)
+ local id=42
+ local opcode=10
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=math.floor(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local aFeCiGoFpib_meta={id=42,opcode=10}
+aFeCiGoFpib_meta.apply=aFeCiGoFpib
+function aFeCiGoFpib_meta.verify(v) return type(v)=="number" end
+local aVpayS2B0COvJHnbC=function(s,a,b)
+ local id=43
+ local opcode=11
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=math.abs(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local aVpayS2B0COvJHnbC_meta={id=43,opcode=11}
+aVpayS2B0COvJHnbC_meta.apply=aVpayS2B0COvJHnbC
+function aVpayS2B0COvJHnbC_meta.verify(v) return type(v)=="number" end
+local a1ULkU6w_3Lai=function(s,a,b)
+ local id=44
+ local opcode=12
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x==y) and 1 or 0
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local a1ULkU6w_3Lai_meta={id=44,opcode=12}
+a1ULkU6w_3Lai_meta.apply=a1ULkU6w_3Lai
+function a1ULkU6w_3Lai_meta.verify(v) return type(v)=="number" end
+local ymwz2r0nsrF4MG=function(s,a,b)
+ local id=45
+ local opcode=13
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x~=y) and 1 or 0
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local ymwz2r0nsrF4MG_meta={id=45,opcode=13}
+ymwz2r0nsrF4MG_meta.apply=ymwz2r0nsrF4MG
+function ymwz2r0nsrF4MG_meta.verify(v) return type(v)=="number" end
+local tYilYd9tay=function(s,a,b)
+ local id=46
+ local opcode=14
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local tYilYd9tay_meta={id=46,opcode=14}
+tYilYd9tay_meta.apply=tYilYd9tay
+function tYilYd9tay_meta.verify(v) return type(v)=="number" end
+local l998QhdWixYe9QpHa=function(s,a,b)
+ local id=47
+ local opcode=15
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x+y)%256
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local l998QhdWixYe9QpHa_meta={id=47,opcode=15}
+l998QhdWixYe9QpHa_meta.apply=l998QhdWixYe9QpHa
+function l998QhdWixYe9QpHa_meta.verify(v) return type(v)=="number" end
+local d3I0eyd13=function(s,a,b)
+ local id=48
+ local opcode=0
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x+y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local d3I0eyd13_meta={id=48,opcode=0}
+d3I0eyd13_meta.apply=d3I0eyd13
+function d3I0eyd13_meta.verify(v) return type(v)=="number" end
+local zsFkH_HruI7Nun5=function(s,a,b)
+ local id=49
+ local opcode=1
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x-y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local zsFkH_HruI7Nun5_meta={id=49,opcode=1}
+zsFkH_HruI7Nun5_meta.apply=zsFkH_HruI7Nun5
+function zsFkH_HruI7Nun5_meta.verify(v) return type(v)=="number" end
+local ojfB1hfye9=function(s,a,b)
+ local id=50
+ local opcode=2
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x*y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local ojfB1hfye9_meta={id=50,opcode=2}
+ojfB1hfye9_meta.apply=ojfB1hfye9
+function ojfB1hfye9_meta.verify(v) return type(v)=="number" end
+local acfYAWe_XawClxfGVH=function(s,a,b)
+ local id=51
+ local opcode=3
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local m=(y==0 and 1 or y); local r=x%m
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local acfYAWe_XawClxfGVH_meta={id=51,opcode=3}
+acfYAWe_XawClxfGVH_meta.apply=acfYAWe_XawClxfGVH
+function acfYAWe_XawClxfGVH_meta.verify(v) return type(v)=="number" end
+local jvh2JxBD_lG9dMzv8_=function(s,a,b)
+ local id=52
+ local opcode=4
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bxor(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local jvh2JxBD_lG9dMzv8__meta={id=52,opcode=4}
+jvh2JxBD_lG9dMzv8__meta.apply=jvh2JxBD_lG9dMzv8_
+function jvh2JxBD_lG9dMzv8__meta.verify(v) return type(v)=="number" end
+local leDjjSRkCD3w=function(s,a,b)
+ local id=53
+ local opcode=5
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.band(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local leDjjSRkCD3w_meta={id=53,opcode=5}
+leDjjSRkCD3w_meta.apply=leDjjSRkCD3w
+function leDjjSRkCD3w_meta.verify(v) return type(v)=="number" end
+local nUchs4ANNhcBiTjU=function(s,a,b)
+ local id=54
+ local opcode=6
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bor(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local nUchs4ANNhcBiTjU_meta={id=54,opcode=6}
+nUchs4ANNhcBiTjU_meta.apply=nUchs4ANNhcBiTjU
+function nUchs4ANNhcBiTjU_meta.verify(v) return type(v)=="number" end
+local z7PfoSd3R=function(s,a,b)
+ local id=55
+ local opcode=7
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bnot(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local z7PfoSd3R_meta={id=55,opcode=7}
+z7PfoSd3R_meta.apply=z7PfoSd3R
+function z7PfoSd3R_meta.verify(v) return type(v)=="number" end
+local je6PoP1wxzeM=function(s,a,b)
+ local id=56
+ local opcode=8
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.lshift(x,y%32)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local je6PoP1wxzeM_meta={id=56,opcode=8}
+je6PoP1wxzeM_meta.apply=je6PoP1wxzeM
+function je6PoP1wxzeM_meta.verify(v) return type(v)=="number" end
+local jlmaUrYS1HWKaON=function(s,a,b)
+ local id=57
+ local opcode=9
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.rshift(x,y%32)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local jlmaUrYS1HWKaON_meta={id=57,opcode=9}
+jlmaUrYS1HWKaON_meta.apply=jlmaUrYS1HWKaON
+function jlmaUrYS1HWKaON_meta.verify(v) return type(v)=="number" end
+local xIRXx5KTSEc71CDv=function(s,a,b)
+ local id=58
+ local opcode=10
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=math.floor(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local xIRXx5KTSEc71CDv_meta={id=58,opcode=10}
+xIRXx5KTSEc71CDv_meta.apply=xIRXx5KTSEc71CDv
+function xIRXx5KTSEc71CDv_meta.verify(v) return type(v)=="number" end
+local ig7yt_XAjgPHlcLv40=function(s,a,b)
+ local id=59
+ local opcode=11
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=math.abs(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local ig7yt_XAjgPHlcLv40_meta={id=59,opcode=11}
+ig7yt_XAjgPHlcLv40_meta.apply=ig7yt_XAjgPHlcLv40
+function ig7yt_XAjgPHlcLv40_meta.verify(v) return type(v)=="number" end
+local gAVmnCygT=function(s,a,b)
+ local id=60
+ local opcode=12
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x==y) and 1 or 0
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local gAVmnCygT_meta={id=60,opcode=12}
+gAVmnCygT_meta.apply=gAVmnCygT
+function gAVmnCygT_meta.verify(v) return type(v)=="number" end
+local dI9wb6F3XZ=function(s,a,b)
+ local id=61
+ local opcode=13
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x~=y) and 1 or 0
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local dI9wb6F3XZ_meta={id=61,opcode=13}
+dI9wb6F3XZ_meta.apply=dI9wb6F3XZ
+function dI9wb6F3XZ_meta.verify(v) return type(v)=="number" end
+local tESB4zvZ9UCbel0mC1=function(s,a,b)
+ local id=62
+ local opcode=14
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local tESB4zvZ9UCbel0mC1_meta={id=62,opcode=14}
+tESB4zvZ9UCbel0mC1_meta.apply=tESB4zvZ9UCbel0mC1
+function tESB4zvZ9UCbel0mC1_meta.verify(v) return type(v)=="number" end
+local i1Xc6wzv_UnyE7Yy4D=function(s,a,b)
+ local id=63
+ local opcode=15
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x+y)%256
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local i1Xc6wzv_UnyE7Yy4D_meta={id=63,opcode=15}
+i1Xc6wzv_UnyE7Yy4D_meta.apply=i1Xc6wzv_UnyE7Yy4D
+function i1Xc6wzv_UnyE7Yy4D_meta.verify(v) return type(v)=="number" end
+local dXPXJonFltn05klQd=function(s,a,b)
+ local id=64
+ local opcode=0
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x+y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local dXPXJonFltn05klQd_meta={id=64,opcode=0}
+dXPXJonFltn05klQd_meta.apply=dXPXJonFltn05klQd
+function dXPXJonFltn05klQd_meta.verify(v) return type(v)=="number" end
+local bWegW_pEmp6e74=function(s,a,b)
+ local id=65
+ local opcode=1
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x-y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local bWegW_pEmp6e74_meta={id=65,opcode=1}
+bWegW_pEmp6e74_meta.apply=bWegW_pEmp6e74
+function bWegW_pEmp6e74_meta.verify(v) return type(v)=="number" end
+local wTYf21__cK3hZYD=function(s,a,b)
+ local id=66
+ local opcode=2
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x*y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local wTYf21__cK3hZYD_meta={id=66,opcode=2}
+wTYf21__cK3hZYD_meta.apply=wTYf21__cK3hZYD
+function wTYf21__cK3hZYD_meta.verify(v) return type(v)=="number" end
+local wWr6Tb7q2gRALzznhe=function(s,a,b)
+ local id=67
+ local opcode=3
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local m=(y==0 and 1 or y); local r=x%m
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local wWr6Tb7q2gRALzznhe_meta={id=67,opcode=3}
+wWr6Tb7q2gRALzznhe_meta.apply=wWr6Tb7q2gRALzznhe
+function wWr6Tb7q2gRALzznhe_meta.verify(v) return type(v)=="number" end
+local vhaYj91c88JgrHYYk=function(s,a,b)
+ local id=68
+ local opcode=4
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bxor(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local vhaYj91c88JgrHYYk_meta={id=68,opcode=4}
+vhaYj91c88JgrHYYk_meta.apply=vhaYj91c88JgrHYYk
+function vhaYj91c88JgrHYYk_meta.verify(v) return type(v)=="number" end
+local mQUtkzxk93Uni=function(s,a,b)
+ local id=69
+ local opcode=5
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.band(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local mQUtkzxk93Uni_meta={id=69,opcode=5}
+mQUtkzxk93Uni_meta.apply=mQUtkzxk93Uni
+function mQUtkzxk93Uni_meta.verify(v) return type(v)=="number" end
+local iHDK3mO6RBzOE=function(s,a,b)
+ local id=70
+ local opcode=6
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bor(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local iHDK3mO6RBzOE_meta={id=70,opcode=6}
+iHDK3mO6RBzOE_meta.apply=iHDK3mO6RBzOE
+function iHDK3mO6RBzOE_meta.verify(v) return type(v)=="number" end
+local l2solP4DOWB9m_Bl=function(s,a,b)
+ local id=71
+ local opcode=7
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bnot(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local l2solP4DOWB9m_Bl_meta={id=71,opcode=7}
+l2solP4DOWB9m_Bl_meta.apply=l2solP4DOWB9m_Bl
+function l2solP4DOWB9m_Bl_meta.verify(v) return type(v)=="number" end
+local n3AMhG9nv9Td=function(s,a,b)
+ local id=72
+ local opcode=8
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.lshift(x,y%32)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local n3AMhG9nv9Td_meta={id=72,opcode=8}
+n3AMhG9nv9Td_meta.apply=n3AMhG9nv9Td
+function n3AMhG9nv9Td_meta.verify(v) return type(v)=="number" end
+local lT27bXllavO_=function(s,a,b)
+ local id=73
+ local opcode=9
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.rshift(x,y%32)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local lT27bXllavO__meta={id=73,opcode=9}
+lT27bXllavO__meta.apply=lT27bXllavO_
+function lT27bXllavO__meta.verify(v) return type(v)=="number" end
+local gxj_MFsyAuppe=function(s,a,b)
+ local id=74
+ local opcode=10
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=math.floor(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local gxj_MFsyAuppe_meta={id=74,opcode=10}
+gxj_MFsyAuppe_meta.apply=gxj_MFsyAuppe
+function gxj_MFsyAuppe_meta.verify(v) return type(v)=="number" end
+local mtbdGE62x_iFo=function(s,a,b)
+ local id=75
+ local opcode=11
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=math.abs(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local mtbdGE62x_iFo_meta={id=75,opcode=11}
+mtbdGE62x_iFo_meta.apply=mtbdGE62x_iFo
+function mtbdGE62x_iFo_meta.verify(v) return type(v)=="number" end
+local cXlsw9iEf=function(s,a,b)
+ local id=76
+ local opcode=12
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x==y) and 1 or 0
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local cXlsw9iEf_meta={id=76,opcode=12}
+cXlsw9iEf_meta.apply=cXlsw9iEf
+function cXlsw9iEf_meta.verify(v) return type(v)=="number" end
+local z2TF18k4mQ8cs=function(s,a,b)
+ local id=77
+ local opcode=13
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x~=y) and 1 or 0
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local z2TF18k4mQ8cs_meta={id=77,opcode=13}
+z2TF18k4mQ8cs_meta.apply=z2TF18k4mQ8cs
+function z2TF18k4mQ8cs_meta.verify(v) return type(v)=="number" end
+local zWKdR21mk0FMkJoIA2=function(s,a,b)
+ local id=78
+ local opcode=14
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local zWKdR21mk0FMkJoIA2_meta={id=78,opcode=14}
+zWKdR21mk0FMkJoIA2_meta.apply=zWKdR21mk0FMkJoIA2
+function zWKdR21mk0FMkJoIA2_meta.verify(v) return type(v)=="number" end
+local eFy7UA6FMy51BeIbcG=function(s,a,b)
+ local id=79
+ local opcode=15
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x+y)%256
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local eFy7UA6FMy51BeIbcG_meta={id=79,opcode=15}
+eFy7UA6FMy51BeIbcG_meta.apply=eFy7UA6FMy51BeIbcG
+function eFy7UA6FMy51BeIbcG_meta.verify(v) return type(v)=="number" end
+local qK_QTko_226kY=function(s,a,b)
+ local id=80
+ local opcode=0
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x+y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local qK_QTko_226kY_meta={id=80,opcode=0}
+qK_QTko_226kY_meta.apply=qK_QTko_226kY
+function qK_QTko_226kY_meta.verify(v) return type(v)=="number" end
+local fpmAEpKjsuQ1m6tn=function(s,a,b)
+ local id=81
+ local opcode=1
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x-y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local fpmAEpKjsuQ1m6tn_meta={id=81,opcode=1}
+fpmAEpKjsuQ1m6tn_meta.apply=fpmAEpKjsuQ1m6tn
+function fpmAEpKjsuQ1m6tn_meta.verify(v) return type(v)=="number" end
+local lt96vVNPmLV=function(s,a,b)
+ local id=82
+ local opcode=2
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x*y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local lt96vVNPmLV_meta={id=82,opcode=2}
+lt96vVNPmLV_meta.apply=lt96vVNPmLV
+function lt96vVNPmLV_meta.verify(v) return type(v)=="number" end
+local jLE1Du8xdNhiShzns5=function(s,a,b)
+ local id=83
+ local opcode=3
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local m=(y==0 and 1 or y); local r=x%m
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local jLE1Du8xdNhiShzns5_meta={id=83,opcode=3}
+jLE1Du8xdNhiShzns5_meta.apply=jLE1Du8xdNhiShzns5
+function jLE1Du8xdNhiShzns5_meta.verify(v) return type(v)=="number" end
+local dpGM54fhiJnorAet=function(s,a,b)
+ local id=84
+ local opcode=4
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bxor(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local dpGM54fhiJnorAet_meta={id=84,opcode=4}
+dpGM54fhiJnorAet_meta.apply=dpGM54fhiJnorAet
+function dpGM54fhiJnorAet_meta.verify(v) return type(v)=="number" end
+local g3YGr4Z8BcArYu=function(s,a,b)
+ local id=85
+ local opcode=5
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.band(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local g3YGr4Z8BcArYu_meta={id=85,opcode=5}
+g3YGr4Z8BcArYu_meta.apply=g3YGr4Z8BcArYu
+function g3YGr4Z8BcArYu_meta.verify(v) return type(v)=="number" end
+local k0mkK1qM2TaRoUDf=function(s,a,b)
+ local id=86
+ local opcode=6
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bor(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local k0mkK1qM2TaRoUDf_meta={id=86,opcode=6}
+k0mkK1qM2TaRoUDf_meta.apply=k0mkK1qM2TaRoUDf
+function k0mkK1qM2TaRoUDf_meta.verify(v) return type(v)=="number" end
+local ePZSzmtXDnx=function(s,a,b)
+ local id=87
+ local opcode=7
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bnot(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local ePZSzmtXDnx_meta={id=87,opcode=7}
+ePZSzmtXDnx_meta.apply=ePZSzmtXDnx
+function ePZSzmtXDnx_meta.verify(v) return type(v)=="number" end
+local kXwb8D_cKNGkUKsTr=function(s,a,b)
+ local id=88
+ local opcode=8
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.lshift(x,y%32)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local kXwb8D_cKNGkUKsTr_meta={id=88,opcode=8}
+kXwb8D_cKNGkUKsTr_meta.apply=kXwb8D_cKNGkUKsTr
+function kXwb8D_cKNGkUKsTr_meta.verify(v) return type(v)=="number" end
+local xqSNCBjzYGfok4pN6=function(s,a,b)
+ local id=89
+ local opcode=9
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.rshift(x,y%32)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local xqSNCBjzYGfok4pN6_meta={id=89,opcode=9}
+xqSNCBjzYGfok4pN6_meta.apply=xqSNCBjzYGfok4pN6
+function xqSNCBjzYGfok4pN6_meta.verify(v) return type(v)=="number" end
+local ayd3McH_NJgZN=function(s,a,b)
+ local id=90
+ local opcode=10
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=math.floor(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local ayd3McH_NJgZN_meta={id=90,opcode=10}
+ayd3McH_NJgZN_meta.apply=ayd3McH_NJgZN
+function ayd3McH_NJgZN_meta.verify(v) return type(v)=="number" end
+local gg8un91XSndTrEi=function(s,a,b)
+ local id=91
+ local opcode=11
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=math.abs(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local gg8un91XSndTrEi_meta={id=91,opcode=11}
+gg8un91XSndTrEi_meta.apply=gg8un91XSndTrEi
+function gg8un91XSndTrEi_meta.verify(v) return type(v)=="number" end
+local ghhiLI90RzNeL3xE74=function(s,a,b)
+ local id=92
+ local opcode=12
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x==y) and 1 or 0
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local ghhiLI90RzNeL3xE74_meta={id=92,opcode=12}
+ghhiLI90RzNeL3xE74_meta.apply=ghhiLI90RzNeL3xE74
+function ghhiLI90RzNeL3xE74_meta.verify(v) return type(v)=="number" end
+local nSndrQKHGuzyDh=function(s,a,b)
+ local id=93
+ local opcode=13
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x~=y) and 1 or 0
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local nSndrQKHGuzyDh_meta={id=93,opcode=13}
+nSndrQKHGuzyDh_meta.apply=nSndrQKHGuzyDh
+function nSndrQKHGuzyDh_meta.verify(v) return type(v)=="number" end
+local s5zvIGjFQgWAN=function(s,a,b)
+ local id=94
+ local opcode=14
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local s5zvIGjFQgWAN_meta={id=94,opcode=14}
+s5zvIGjFQgWAN_meta.apply=s5zvIGjFQgWAN
+function s5zvIGjFQgWAN_meta.verify(v) return type(v)=="number" end
+local y5EUb9Jj0j3nz4j1J=function(s,a,b)
+ local id=95
+ local opcode=15
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x+y)%256
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local y5EUb9Jj0j3nz4j1J_meta={id=95,opcode=15}
+y5EUb9Jj0j3nz4j1J_meta.apply=y5EUb9Jj0j3nz4j1J
+function y5EUb9Jj0j3nz4j1J_meta.verify(v) return type(v)=="number" end
+local nvLXvP6TzCK5oIqO=function(s,a,b)
+ local id=96
+ local opcode=0
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x+y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local nvLXvP6TzCK5oIqO_meta={id=96,opcode=0}
+nvLXvP6TzCK5oIqO_meta.apply=nvLXvP6TzCK5oIqO
+function nvLXvP6TzCK5oIqO_meta.verify(v) return type(v)=="number" end
+local xFiqqve1dVV=function(s,a,b)
+ local id=97
+ local opcode=1
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x-y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local xFiqqve1dVV_meta={id=97,opcode=1}
+xFiqqve1dVV_meta.apply=xFiqqve1dVV
+function xFiqqve1dVV_meta.verify(v) return type(v)=="number" end
+local wsuT333mN9gfFXIZy=function(s,a,b)
+ local id=98
+ local opcode=2
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x*y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local wsuT333mN9gfFXIZy_meta={id=98,opcode=2}
+wsuT333mN9gfFXIZy_meta.apply=wsuT333mN9gfFXIZy
+function wsuT333mN9gfFXIZy_meta.verify(v) return type(v)=="number" end
+local y3sn7q94tHmUypVd=function(s,a,b)
+ local id=99
+ local opcode=3
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local m=(y==0 and 1 or y); local r=x%m
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local y3sn7q94tHmUypVd_meta={id=99,opcode=3}
+y3sn7q94tHmUypVd_meta.apply=y3sn7q94tHmUypVd
+function y3sn7q94tHmUypVd_meta.verify(v) return type(v)=="number" end
+local avdL6rbutyS2n=function(s,a,b)
+ local id=100
+ local opcode=4
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bxor(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local avdL6rbutyS2n_meta={id=100,opcode=4}
+avdL6rbutyS2n_meta.apply=avdL6rbutyS2n
+function avdL6rbutyS2n_meta.verify(v) return type(v)=="number" end
+local eIwHk6OYwSxa8rS9=function(s,a,b)
+ local id=101
+ local opcode=5
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.band(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local eIwHk6OYwSxa8rS9_meta={id=101,opcode=5}
+eIwHk6OYwSxa8rS9_meta.apply=eIwHk6OYwSxa8rS9
+function eIwHk6OYwSxa8rS9_meta.verify(v) return type(v)=="number" end
+local uoMgvow7UZJ6V=function(s,a,b)
+ local id=102
+ local opcode=6
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bor(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local uoMgvow7UZJ6V_meta={id=102,opcode=6}
+uoMgvow7UZJ6V_meta.apply=uoMgvow7UZJ6V
+function uoMgvow7UZJ6V_meta.verify(v) return type(v)=="number" end
+local d6svLa6Cdk=function(s,a,b)
+ local id=103
+ local opcode=7
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bnot(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local d6svLa6Cdk_meta={id=103,opcode=7}
+d6svLa6Cdk_meta.apply=d6svLa6Cdk
+function d6svLa6Cdk_meta.verify(v) return type(v)=="number" end
+local tFjKiJnBiLpZ6L0=function(s,a,b)
+ local id=104
+ local opcode=8
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.lshift(x,y%32)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local tFjKiJnBiLpZ6L0_meta={id=104,opcode=8}
+tFjKiJnBiLpZ6L0_meta.apply=tFjKiJnBiLpZ6L0
+function tFjKiJnBiLpZ6L0_meta.verify(v) return type(v)=="number" end
+local h6OmQIQCZJuz8=function(s,a,b)
+ local id=105
+ local opcode=9
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.rshift(x,y%32)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local h6OmQIQCZJuz8_meta={id=105,opcode=9}
+h6OmQIQCZJuz8_meta.apply=h6OmQIQCZJuz8
+function h6OmQIQCZJuz8_meta.verify(v) return type(v)=="number" end
+local mMYP7Inyty8TDLya=function(s,a,b)
+ local id=106
+ local opcode=10
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=math.floor(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local mMYP7Inyty8TDLya_meta={id=106,opcode=10}
+mMYP7Inyty8TDLya_meta.apply=mMYP7Inyty8TDLya
+function mMYP7Inyty8TDLya_meta.verify(v) return type(v)=="number" end
+local za2ViCUjsV=function(s,a,b)
+ local id=107
+ local opcode=11
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=math.abs(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local za2ViCUjsV_meta={id=107,opcode=11}
+za2ViCUjsV_meta.apply=za2ViCUjsV
+function za2ViCUjsV_meta.verify(v) return type(v)=="number" end
+local e8ozL9jLVQ=function(s,a,b)
+ local id=108
+ local opcode=12
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x==y) and 1 or 0
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local e8ozL9jLVQ_meta={id=108,opcode=12}
+e8ozL9jLVQ_meta.apply=e8ozL9jLVQ
+function e8ozL9jLVQ_meta.verify(v) return type(v)=="number" end
+local c9oTPL3A2BJkuc=function(s,a,b)
+ local id=109
+ local opcode=13
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x~=y) and 1 or 0
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local c9oTPL3A2BJkuc_meta={id=109,opcode=13}
+c9oTPL3A2BJkuc_meta.apply=c9oTPL3A2BJkuc
+function c9oTPL3A2BJkuc_meta.verify(v) return type(v)=="number" end
+local f8kHBOL1dhM=function(s,a,b)
+ local id=110
+ local opcode=14
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local f8kHBOL1dhM_meta={id=110,opcode=14}
+f8kHBOL1dhM_meta.apply=f8kHBOL1dhM
+function f8kHBOL1dhM_meta.verify(v) return type(v)=="number" end
+local dnS28AvLl2=function(s,a,b)
+ local id=111
+ local opcode=15
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x+y)%256
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local dnS28AvLl2_meta={id=111,opcode=15}
+dnS28AvLl2_meta.apply=dnS28AvLl2
+function dnS28AvLl2_meta.verify(v) return type(v)=="number" end
+local jParMhXqeDU=function(s,a,b)
+ local id=112
+ local opcode=0
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x+y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local jParMhXqeDU_meta={id=112,opcode=0}
+jParMhXqeDU_meta.apply=jParMhXqeDU
+function jParMhXqeDU_meta.verify(v) return type(v)=="number" end
+local ga0AxoyQY6un52ADv=function(s,a,b)
+ local id=113
+ local opcode=1
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x-y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local ga0AxoyQY6un52ADv_meta={id=113,opcode=1}
+ga0AxoyQY6un52ADv_meta.apply=ga0AxoyQY6un52ADv
+function ga0AxoyQY6un52ADv_meta.verify(v) return type(v)=="number" end
+local q7tXULHJf3kOUU=function(s,a,b)
+ local id=114
+ local opcode=2
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x*y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local q7tXULHJf3kOUU_meta={id=114,opcode=2}
+q7tXULHJf3kOUU_meta.apply=q7tXULHJf3kOUU
+function q7tXULHJf3kOUU_meta.verify(v) return type(v)=="number" end
+local kz4QHnrv0Yc=function(s,a,b)
+ local id=115
+ local opcode=3
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local m=(y==0 and 1 or y); local r=x%m
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local kz4QHnrv0Yc_meta={id=115,opcode=3}
+kz4QHnrv0Yc_meta.apply=kz4QHnrv0Yc
+function kz4QHnrv0Yc_meta.verify(v) return type(v)=="number" end
+local ewvcN42GpSuz3sci2c=function(s,a,b)
+ local id=116
+ local opcode=4
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bxor(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local ewvcN42GpSuz3sci2c_meta={id=116,opcode=4}
+ewvcN42GpSuz3sci2c_meta.apply=ewvcN42GpSuz3sci2c
+function ewvcN42GpSuz3sci2c_meta.verify(v) return type(v)=="number" end
+local rbkdNzKKL=function(s,a,b)
+ local id=117
+ local opcode=5
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.band(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local rbkdNzKKL_meta={id=117,opcode=5}
+rbkdNzKKL_meta.apply=rbkdNzKKL
+function rbkdNzKKL_meta.verify(v) return type(v)=="number" end
+local tZWXA3qxcH0G=function(s,a,b)
+ local id=118
+ local opcode=6
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bor(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local tZWXA3qxcH0G_meta={id=118,opcode=6}
+tZWXA3qxcH0G_meta.apply=tZWXA3qxcH0G
+function tZWXA3qxcH0G_meta.verify(v) return type(v)=="number" end
+local wYfpywUlGBqPhqfX2n=function(s,a,b)
+ local id=119
+ local opcode=7
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bnot(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local wYfpywUlGBqPhqfX2n_meta={id=119,opcode=7}
+wYfpywUlGBqPhqfX2n_meta.apply=wYfpywUlGBqPhqfX2n
+function wYfpywUlGBqPhqfX2n_meta.verify(v) return type(v)=="number" end
+local ePiFWiPZ_MBz=function(s,a,b)
+ local id=120
+ local opcode=8
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.lshift(x,y%32)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local ePiFWiPZ_MBz_meta={id=120,opcode=8}
+ePiFWiPZ_MBz_meta.apply=ePiFWiPZ_MBz
+function ePiFWiPZ_MBz_meta.verify(v) return type(v)=="number" end
+local fvUs2VHHGUMjAh=function(s,a,b)
+ local id=121
+ local opcode=9
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.rshift(x,y%32)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local fvUs2VHHGUMjAh_meta={id=121,opcode=9}
+fvUs2VHHGUMjAh_meta.apply=fvUs2VHHGUMjAh
+function fvUs2VHHGUMjAh_meta.verify(v) return type(v)=="number" end
+local ppcSfGibZ7S=function(s,a,b)
+ local id=122
+ local opcode=10
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=math.floor(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local ppcSfGibZ7S_meta={id=122,opcode=10}
+ppcSfGibZ7S_meta.apply=ppcSfGibZ7S
+function ppcSfGibZ7S_meta.verify(v) return type(v)=="number" end
+local obqMu3g5oAtmd6=function(s,a,b)
+ local id=123
+ local opcode=11
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=math.abs(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local obqMu3g5oAtmd6_meta={id=123,opcode=11}
+obqMu3g5oAtmd6_meta.apply=obqMu3g5oAtmd6
+function obqMu3g5oAtmd6_meta.verify(v) return type(v)=="number" end
+local eK8VEnvTFq6c_dJNt=function(s,a,b)
+ local id=124
+ local opcode=12
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x==y) and 1 or 0
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local eK8VEnvTFq6c_dJNt_meta={id=124,opcode=12}
+eK8VEnvTFq6c_dJNt_meta.apply=eK8VEnvTFq6c_dJNt
+function eK8VEnvTFq6c_dJNt_meta.verify(v) return type(v)=="number" end
+local pXOQQG4EB39OUHNV3=function(s,a,b)
+ local id=125
+ local opcode=13
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x~=y) and 1 or 0
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local pXOQQG4EB39OUHNV3_meta={id=125,opcode=13}
+pXOQQG4EB39OUHNV3_meta.apply=pXOQQG4EB39OUHNV3
+function pXOQQG4EB39OUHNV3_meta.verify(v) return type(v)=="number" end
+local eKnZNxrmC6I1nspJIG=function(s,a,b)
+ local id=126
+ local opcode=14
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local eKnZNxrmC6I1nspJIG_meta={id=126,opcode=14}
+eKnZNxrmC6I1nspJIG_meta.apply=eKnZNxrmC6I1nspJIG
+function eKnZNxrmC6I1nspJIG_meta.verify(v) return type(v)=="number" end
+local eCMqnYgLKrvS=function(s,a,b)
+ local id=127
+ local opcode=15
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x+y)%256
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local eCMqnYgLKrvS_meta={id=127,opcode=15}
+eCMqnYgLKrvS_meta.apply=eCMqnYgLKrvS
+function eCMqnYgLKrvS_meta.verify(v) return type(v)=="number" end
+local m6BOgvPKhIK8U=function(s,a,b)
+ local id=128
+ local opcode=0
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x+y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local m6BOgvPKhIK8U_meta={id=128,opcode=0}
+m6BOgvPKhIK8U_meta.apply=m6BOgvPKhIK8U
+function m6BOgvPKhIK8U_meta.verify(v) return type(v)=="number" end
+local j6GcR8HwtsnN1o9=function(s,a,b)
+ local id=129
+ local opcode=1
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x-y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local j6GcR8HwtsnN1o9_meta={id=129,opcode=1}
+j6GcR8HwtsnN1o9_meta.apply=j6GcR8HwtsnN1o9
+function j6GcR8HwtsnN1o9_meta.verify(v) return type(v)=="number" end
+local iBCNWqoko6kk=function(s,a,b)
+ local id=130
+ local opcode=2
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x*y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local iBCNWqoko6kk_meta={id=130,opcode=2}
+iBCNWqoko6kk_meta.apply=iBCNWqoko6kk
+function iBCNWqoko6kk_meta.verify(v) return type(v)=="number" end
+local p2sii1bEZBBc1_MxI=function(s,a,b)
+ local id=131
+ local opcode=3
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local m=(y==0 and 1 or y); local r=x%m
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local p2sii1bEZBBc1_MxI_meta={id=131,opcode=3}
+p2sii1bEZBBc1_MxI_meta.apply=p2sii1bEZBBc1_MxI
+function p2sii1bEZBBc1_MxI_meta.verify(v) return type(v)=="number" end
+local g7Wj3ncvcvMVdt=function(s,a,b)
+ local id=132
+ local opcode=4
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bxor(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local g7Wj3ncvcvMVdt_meta={id=132,opcode=4}
+g7Wj3ncvcvMVdt_meta.apply=g7Wj3ncvcvMVdt
+function g7Wj3ncvcvMVdt_meta.verify(v) return type(v)=="number" end
+local lgi9lwN9dvkRqWM=function(s,a,b)
+ local id=133
+ local opcode=5
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.band(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local lgi9lwN9dvkRqWM_meta={id=133,opcode=5}
+lgi9lwN9dvkRqWM_meta.apply=lgi9lwN9dvkRqWM
+function lgi9lwN9dvkRqWM_meta.verify(v) return type(v)=="number" end
+local aY3cMknmUDY=function(s,a,b)
+ local id=134
+ local opcode=6
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bor(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local aY3cMknmUDY_meta={id=134,opcode=6}
+aY3cMknmUDY_meta.apply=aY3cMknmUDY
+function aY3cMknmUDY_meta.verify(v) return type(v)=="number" end
+local r5MwlF4gf9sVN=function(s,a,b)
+ local id=135
+ local opcode=7
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bnot(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local r5MwlF4gf9sVN_meta={id=135,opcode=7}
+r5MwlF4gf9sVN_meta.apply=r5MwlF4gf9sVN
+function r5MwlF4gf9sVN_meta.verify(v) return type(v)=="number" end
+local y75O37iqKdJTGFqy9=function(s,a,b)
+ local id=136
+ local opcode=8
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.lshift(x,y%32)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local y75O37iqKdJTGFqy9_meta={id=136,opcode=8}
+y75O37iqKdJTGFqy9_meta.apply=y75O37iqKdJTGFqy9
+function y75O37iqKdJTGFqy9_meta.verify(v) return type(v)=="number" end
+local iXkFwOfbYv_uJi=function(s,a,b)
+ local id=137
+ local opcode=9
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.rshift(x,y%32)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local iXkFwOfbYv_uJi_meta={id=137,opcode=9}
+iXkFwOfbYv_uJi_meta.apply=iXkFwOfbYv_uJi
+function iXkFwOfbYv_uJi_meta.verify(v) return type(v)=="number" end
+local k641qxKkLfK=function(s,a,b)
+ local id=138
+ local opcode=10
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=math.floor(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local k641qxKkLfK_meta={id=138,opcode=10}
+k641qxKkLfK_meta.apply=k641qxKkLfK
+function k641qxKkLfK_meta.verify(v) return type(v)=="number" end
+local gD4jbfBgPB66iU=function(s,a,b)
+ local id=139
+ local opcode=11
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=math.abs(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local gD4jbfBgPB66iU_meta={id=139,opcode=11}
+gD4jbfBgPB66iU_meta.apply=gD4jbfBgPB66iU
+function gD4jbfBgPB66iU_meta.verify(v) return type(v)=="number" end
+local lmo8GENb8gm7o5L4i=function(s,a,b)
+ local id=140
+ local opcode=12
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x==y) and 1 or 0
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local lmo8GENb8gm7o5L4i_meta={id=140,opcode=12}
+lmo8GENb8gm7o5L4i_meta.apply=lmo8GENb8gm7o5L4i
+function lmo8GENb8gm7o5L4i_meta.verify(v) return type(v)=="number" end
+local ygFyfN4AYTRUEJV=function(s,a,b)
+ local id=141
+ local opcode=13
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x~=y) and 1 or 0
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local ygFyfN4AYTRUEJV_meta={id=141,opcode=13}
+ygFyfN4AYTRUEJV_meta.apply=ygFyfN4AYTRUEJV
+function ygFyfN4AYTRUEJV_meta.verify(v) return type(v)=="number" end
+local m7YzM6vv7nZkQtqT=function(s,a,b)
+ local id=142
+ local opcode=14
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local m7YzM6vv7nZkQtqT_meta={id=142,opcode=14}
+m7YzM6vv7nZkQtqT_meta.apply=m7YzM6vv7nZkQtqT
+function m7YzM6vv7nZkQtqT_meta.verify(v) return type(v)=="number" end
+local rXKFch9snVgCf=function(s,a,b)
+ local id=143
+ local opcode=15
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x+y)%256
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local rXKFch9snVgCf_meta={id=143,opcode=15}
+rXKFch9snVgCf_meta.apply=rXKFch9snVgCf
+function rXKFch9snVgCf_meta.verify(v) return type(v)=="number" end
+local hWE6TjSTuY=function(s,a,b)
+ local id=144
+ local opcode=0
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x+y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local hWE6TjSTuY_meta={id=144,opcode=0}
+hWE6TjSTuY_meta.apply=hWE6TjSTuY
+function hWE6TjSTuY_meta.verify(v) return type(v)=="number" end
+local fz2gPkmdps7Bu1zXE=function(s,a,b)
+ local id=145
+ local opcode=1
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x-y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local fz2gPkmdps7Bu1zXE_meta={id=145,opcode=1}
+fz2gPkmdps7Bu1zXE_meta.apply=fz2gPkmdps7Bu1zXE
+function fz2gPkmdps7Bu1zXE_meta.verify(v) return type(v)=="number" end
+local x60GLyZeokgNKg=function(s,a,b)
+ local id=146
+ local opcode=2
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x*y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local x60GLyZeokgNKg_meta={id=146,opcode=2}
+x60GLyZeokgNKg_meta.apply=x60GLyZeokgNKg
+function x60GLyZeokgNKg_meta.verify(v) return type(v)=="number" end
+local lOW_RITN_j9Bi_A=function(s,a,b)
+ local id=147
+ local opcode=3
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local m=(y==0 and 1 or y); local r=x%m
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local lOW_RITN_j9Bi_A_meta={id=147,opcode=3}
+lOW_RITN_j9Bi_A_meta.apply=lOW_RITN_j9Bi_A
+function lOW_RITN_j9Bi_A_meta.verify(v) return type(v)=="number" end
+local zZ73XcA_QwQ8=function(s,a,b)
+ local id=148
+ local opcode=4
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bxor(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local zZ73XcA_QwQ8_meta={id=148,opcode=4}
+zZ73XcA_QwQ8_meta.apply=zZ73XcA_QwQ8
+function zZ73XcA_QwQ8_meta.verify(v) return type(v)=="number" end
+local raa_l3GQI=function(s,a,b)
+ local id=149
+ local opcode=5
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.band(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local raa_l3GQI_meta={id=149,opcode=5}
+raa_l3GQI_meta.apply=raa_l3GQI
+function raa_l3GQI_meta.verify(v) return type(v)=="number" end
+local hto03ZTB5fU=function(s,a,b)
+ local id=150
+ local opcode=6
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bor(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local hto03ZTB5fU_meta={id=150,opcode=6}
+hto03ZTB5fU_meta.apply=hto03ZTB5fU
+function hto03ZTB5fU_meta.verify(v) return type(v)=="number" end
+local lajVXsfcWL6p_aS=function(s,a,b)
+ local id=151
+ local opcode=7
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bnot(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local lajVXsfcWL6p_aS_meta={id=151,opcode=7}
+lajVXsfcWL6p_aS_meta.apply=lajVXsfcWL6p_aS
+function lajVXsfcWL6p_aS_meta.verify(v) return type(v)=="number" end
+local dyQHmZFYsc=function(s,a,b)
+ local id=152
+ local opcode=8
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.lshift(x,y%32)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local dyQHmZFYsc_meta={id=152,opcode=8}
+dyQHmZFYsc_meta.apply=dyQHmZFYsc
+function dyQHmZFYsc_meta.verify(v) return type(v)=="number" end
+local lagS0Ik4MoXczGsFs=function(s,a,b)
+ local id=153
+ local opcode=9
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.rshift(x,y%32)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local lagS0Ik4MoXczGsFs_meta={id=153,opcode=9}
+lagS0Ik4MoXczGsFs_meta.apply=lagS0Ik4MoXczGsFs
+function lagS0Ik4MoXczGsFs_meta.verify(v) return type(v)=="number" end
+local hopPOb6aHmWwl4y=function(s,a,b)
+ local id=154
+ local opcode=10
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=math.floor(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local hopPOb6aHmWwl4y_meta={id=154,opcode=10}
+hopPOb6aHmWwl4y_meta.apply=hopPOb6aHmWwl4y
+function hopPOb6aHmWwl4y_meta.verify(v) return type(v)=="number" end
+local psP0XsL4hF5zqSxKR3=function(s,a,b)
+ local id=155
+ local opcode=11
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=math.abs(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local psP0XsL4hF5zqSxKR3_meta={id=155,opcode=11}
+psP0XsL4hF5zqSxKR3_meta.apply=psP0XsL4hF5zqSxKR3
+function psP0XsL4hF5zqSxKR3_meta.verify(v) return type(v)=="number" end
+local rW_4jUzaqyEUOUH=function(s,a,b)
+ local id=156
+ local opcode=12
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x==y) and 1 or 0
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local rW_4jUzaqyEUOUH_meta={id=156,opcode=12}
+rW_4jUzaqyEUOUH_meta.apply=rW_4jUzaqyEUOUH
+function rW_4jUzaqyEUOUH_meta.verify(v) return type(v)=="number" end
+local yT5BrF28x3xYBbwEy=function(s,a,b)
+ local id=157
+ local opcode=13
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x~=y) and 1 or 0
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local yT5BrF28x3xYBbwEy_meta={id=157,opcode=13}
+yT5BrF28x3xYBbwEy_meta.apply=yT5BrF28x3xYBbwEy
+function yT5BrF28x3xYBbwEy_meta.verify(v) return type(v)=="number" end
+local m9vdRaMjEEvw8eHA2a=function(s,a,b)
+ local id=158
+ local opcode=14
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local m9vdRaMjEEvw8eHA2a_meta={id=158,opcode=14}
+m9vdRaMjEEvw8eHA2a_meta.apply=m9vdRaMjEEvw8eHA2a
+function m9vdRaMjEEvw8eHA2a_meta.verify(v) return type(v)=="number" end
+local rRUvg9AS6jjKbYih_s=function(s,a,b)
+ local id=159
+ local opcode=15
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x+y)%256
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local rRUvg9AS6jjKbYih_s_meta={id=159,opcode=15}
+rRUvg9AS6jjKbYih_s_meta.apply=rRUvg9AS6jjKbYih_s
+function rRUvg9AS6jjKbYih_s_meta.verify(v) return type(v)=="number" end
+local nsI6LJAyN1P7s=function(s,a,b)
+ local id=160
+ local opcode=0
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x+y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local nsI6LJAyN1P7s_meta={id=160,opcode=0}
+nsI6LJAyN1P7s_meta.apply=nsI6LJAyN1P7s
+function nsI6LJAyN1P7s_meta.verify(v) return type(v)=="number" end
+local ibnVRJ1qFNH1gL=function(s,a,b)
+ local id=161
+ local opcode=1
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x-y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local ibnVRJ1qFNH1gL_meta={id=161,opcode=1}
+ibnVRJ1qFNH1gL_meta.apply=ibnVRJ1qFNH1gL
+function ibnVRJ1qFNH1gL_meta.verify(v) return type(v)=="number" end
+local nXObu_fpmv=function(s,a,b)
+ local id=162
+ local opcode=2
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x*y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local nXObu_fpmv_meta={id=162,opcode=2}
+nXObu_fpmv_meta.apply=nXObu_fpmv
+function nXObu_fpmv_meta.verify(v) return type(v)=="number" end
+local ba4gip9Zw1LWbZ5=function(s,a,b)
+ local id=163
+ local opcode=3
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local m=(y==0 and 1 or y); local r=x%m
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local ba4gip9Zw1LWbZ5_meta={id=163,opcode=3}
+ba4gip9Zw1LWbZ5_meta.apply=ba4gip9Zw1LWbZ5
+function ba4gip9Zw1LWbZ5_meta.verify(v) return type(v)=="number" end
+local p6qYlk_2DRLaMY=function(s,a,b)
+ local id=164
+ local opcode=4
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bxor(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local p6qYlk_2DRLaMY_meta={id=164,opcode=4}
+p6qYlk_2DRLaMY_meta.apply=p6qYlk_2DRLaMY
+function p6qYlk_2DRLaMY_meta.verify(v) return type(v)=="number" end
+local r7kRxt9YIcd=function(s,a,b)
+ local id=165
+ local opcode=5
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.band(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local r7kRxt9YIcd_meta={id=165,opcode=5}
+r7kRxt9YIcd_meta.apply=r7kRxt9YIcd
+function r7kRxt9YIcd_meta.verify(v) return type(v)=="number" end
+local ffJ07EtREo=function(s,a,b)
+ local id=166
+ local opcode=6
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bor(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local ffJ07EtREo_meta={id=166,opcode=6}
+ffJ07EtREo_meta.apply=ffJ07EtREo
+function ffJ07EtREo_meta.verify(v) return type(v)=="number" end
+local sAHeCRN8xx=function(s,a,b)
+ local id=167
+ local opcode=7
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bnot(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local sAHeCRN8xx_meta={id=167,opcode=7}
+sAHeCRN8xx_meta.apply=sAHeCRN8xx
+function sAHeCRN8xx_meta.verify(v) return type(v)=="number" end
+local t2TdEHhbp_VSMacz_d=function(s,a,b)
+ local id=168
+ local opcode=8
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.lshift(x,y%32)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local t2TdEHhbp_VSMacz_d_meta={id=168,opcode=8}
+t2TdEHhbp_VSMacz_d_meta.apply=t2TdEHhbp_VSMacz_d
+function t2TdEHhbp_VSMacz_d_meta.verify(v) return type(v)=="number" end
+local bS59UsDnS_de=function(s,a,b)
+ local id=169
+ local opcode=9
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.rshift(x,y%32)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local bS59UsDnS_de_meta={id=169,opcode=9}
+bS59UsDnS_de_meta.apply=bS59UsDnS_de
+function bS59UsDnS_de_meta.verify(v) return type(v)=="number" end
+local a5XuoqJzacoU2hi0=function(s,a,b)
+ local id=170
+ local opcode=10
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=math.floor(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local a5XuoqJzacoU2hi0_meta={id=170,opcode=10}
+a5XuoqJzacoU2hi0_meta.apply=a5XuoqJzacoU2hi0
+function a5XuoqJzacoU2hi0_meta.verify(v) return type(v)=="number" end
+local jJrXRG8jUVwmoG=function(s,a,b)
+ local id=171
+ local opcode=11
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=math.abs(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local jJrXRG8jUVwmoG_meta={id=171,opcode=11}
+jJrXRG8jUVwmoG_meta.apply=jJrXRG8jUVwmoG
+function jJrXRG8jUVwmoG_meta.verify(v) return type(v)=="number" end
+local irIavYH5RW0awrn=function(s,a,b)
+ local id=172
+ local opcode=12
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x==y) and 1 or 0
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local irIavYH5RW0awrn_meta={id=172,opcode=12}
+irIavYH5RW0awrn_meta.apply=irIavYH5RW0awrn
+function irIavYH5RW0awrn_meta.verify(v) return type(v)=="number" end
+local ykMCMybLXoaTmGRf=function(s,a,b)
+ local id=173
+ local opcode=13
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x~=y) and 1 or 0
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local ykMCMybLXoaTmGRf_meta={id=173,opcode=13}
+ykMCMybLXoaTmGRf_meta.apply=ykMCMybLXoaTmGRf
+function ykMCMybLXoaTmGRf_meta.verify(v) return type(v)=="number" end
+local hK8vbZKbc90t5=function(s,a,b)
+ local id=174
+ local opcode=14
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local hK8vbZKbc90t5_meta={id=174,opcode=14}
+hK8vbZKbc90t5_meta.apply=hK8vbZKbc90t5
+function hK8vbZKbc90t5_meta.verify(v) return type(v)=="number" end
+local xVqLsc6mOgXz3=function(s,a,b)
+ local id=175
+ local opcode=15
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x+y)%256
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local xVqLsc6mOgXz3_meta={id=175,opcode=15}
+xVqLsc6mOgXz3_meta.apply=xVqLsc6mOgXz3
+function xVqLsc6mOgXz3_meta.verify(v) return type(v)=="number" end
+local rmC5bUZTqnSia_c=function(s,a,b)
+ local id=176
+ local opcode=0
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x+y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local rmC5bUZTqnSia_c_meta={id=176,opcode=0}
+rmC5bUZTqnSia_c_meta.apply=rmC5bUZTqnSia_c
+function rmC5bUZTqnSia_c_meta.verify(v) return type(v)=="number" end
+local q87eolhj43lfeJ=function(s,a,b)
+ local id=177
+ local opcode=1
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x-y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local q87eolhj43lfeJ_meta={id=177,opcode=1}
+q87eolhj43lfeJ_meta.apply=q87eolhj43lfeJ
+function q87eolhj43lfeJ_meta.verify(v) return type(v)=="number" end
+local qSivbDBaD8xUNq=function(s,a,b)
+ local id=178
+ local opcode=2
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x*y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local qSivbDBaD8xUNq_meta={id=178,opcode=2}
+qSivbDBaD8xUNq_meta.apply=qSivbDBaD8xUNq
+function qSivbDBaD8xUNq_meta.verify(v) return type(v)=="number" end
+local sMWNLCcq6vC=function(s,a,b)
+ local id=179
+ local opcode=3
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local m=(y==0 and 1 or y); local r=x%m
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local sMWNLCcq6vC_meta={id=179,opcode=3}
+sMWNLCcq6vC_meta.apply=sMWNLCcq6vC
+function sMWNLCcq6vC_meta.verify(v) return type(v)=="number" end
+local b_lEniZTaa=function(s,a,b)
+ local id=180
+ local opcode=4
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bxor(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local b_lEniZTaa_meta={id=180,opcode=4}
+b_lEniZTaa_meta.apply=b_lEniZTaa
+function b_lEniZTaa_meta.verify(v) return type(v)=="number" end
+local milA16gJKgB_dK=function(s,a,b)
+ local id=181
+ local opcode=5
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.band(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local milA16gJKgB_dK_meta={id=181,opcode=5}
+milA16gJKgB_dK_meta.apply=milA16gJKgB_dK
+function milA16gJKgB_dK_meta.verify(v) return type(v)=="number" end
+local aBCT2xQe9f20608V2=function(s,a,b)
+ local id=182
+ local opcode=6
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bor(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local aBCT2xQe9f20608V2_meta={id=182,opcode=6}
+aBCT2xQe9f20608V2_meta.apply=aBCT2xQe9f20608V2
+function aBCT2xQe9f20608V2_meta.verify(v) return type(v)=="number" end
+local uO9uuRGWUCzKkUU=function(s,a,b)
+ local id=183
+ local opcode=7
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bnot(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local uO9uuRGWUCzKkUU_meta={id=183,opcode=7}
+uO9uuRGWUCzKkUU_meta.apply=uO9uuRGWUCzKkUU
+function uO9uuRGWUCzKkUU_meta.verify(v) return type(v)=="number" end
+local ho1eIO5GaoeVu=function(s,a,b)
+ local id=184
+ local opcode=8
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.lshift(x,y%32)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local ho1eIO5GaoeVu_meta={id=184,opcode=8}
+ho1eIO5GaoeVu_meta.apply=ho1eIO5GaoeVu
+function ho1eIO5GaoeVu_meta.verify(v) return type(v)=="number" end
+local yJHsNh3Wb4J0bK=function(s,a,b)
+ local id=185
+ local opcode=9
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.rshift(x,y%32)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local yJHsNh3Wb4J0bK_meta={id=185,opcode=9}
+yJHsNh3Wb4J0bK_meta.apply=yJHsNh3Wb4J0bK
+function yJHsNh3Wb4J0bK_meta.verify(v) return type(v)=="number" end
+local lvTCgxbxLay=function(s,a,b)
+ local id=186
+ local opcode=10
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=math.floor(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local lvTCgxbxLay_meta={id=186,opcode=10}
+lvTCgxbxLay_meta.apply=lvTCgxbxLay
+function lvTCgxbxLay_meta.verify(v) return type(v)=="number" end
+local tlhdZ021STomhK=function(s,a,b)
+ local id=187
+ local opcode=11
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=math.abs(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local tlhdZ021STomhK_meta={id=187,opcode=11}
+tlhdZ021STomhK_meta.apply=tlhdZ021STomhK
+function tlhdZ021STomhK_meta.verify(v) return type(v)=="number" end
+local yzJ734ESCMJUkn=function(s,a,b)
+ local id=188
+ local opcode=12
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x==y) and 1 or 0
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local yzJ734ESCMJUkn_meta={id=188,opcode=12}
+yzJ734ESCMJUkn_meta.apply=yzJ734ESCMJUkn
+function yzJ734ESCMJUkn_meta.verify(v) return type(v)=="number" end
+local nyKmAevfW=function(s,a,b)
+ local id=189
+ local opcode=13
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x~=y) and 1 or 0
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local nyKmAevfW_meta={id=189,opcode=13}
+nyKmAevfW_meta.apply=nyKmAevfW
+function nyKmAevfW_meta.verify(v) return type(v)=="number" end
+local i44itjX_ku=function(s,a,b)
+ local id=190
+ local opcode=14
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local i44itjX_ku_meta={id=190,opcode=14}
+i44itjX_ku_meta.apply=i44itjX_ku
+function i44itjX_ku_meta.verify(v) return type(v)=="number" end
+local yrVJ975W6NHKt=function(s,a,b)
+ local id=191
+ local opcode=15
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x+y)%256
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local yrVJ975W6NHKt_meta={id=191,opcode=15}
+yrVJ975W6NHKt_meta.apply=yrVJ975W6NHKt
+function yrVJ975W6NHKt_meta.verify(v) return type(v)=="number" end
+local vTmDu4qFrg_3=function(s,a,b)
+ local id=192
+ local opcode=0
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x+y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local vTmDu4qFrg_3_meta={id=192,opcode=0}
+vTmDu4qFrg_3_meta.apply=vTmDu4qFrg_3
+function vTmDu4qFrg_3_meta.verify(v) return type(v)=="number" end
+local rlnrrYZx8_t=function(s,a,b)
+ local id=193
+ local opcode=1
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x-y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local rlnrrYZx8_t_meta={id=193,opcode=1}
+rlnrrYZx8_t_meta.apply=rlnrrYZx8_t
+function rlnrrYZx8_t_meta.verify(v) return type(v)=="number" end
+local tPPTHNsrpOlQi2xh=function(s,a,b)
+ local id=194
+ local opcode=2
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x*y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local tPPTHNsrpOlQi2xh_meta={id=194,opcode=2}
+tPPTHNsrpOlQi2xh_meta.apply=tPPTHNsrpOlQi2xh
+function tPPTHNsrpOlQi2xh_meta.verify(v) return type(v)=="number" end
+local y8L3XvawPxD4pwZX=function(s,a,b)
+ local id=195
+ local opcode=3
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local m=(y==0 and 1 or y); local r=x%m
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local y8L3XvawPxD4pwZX_meta={id=195,opcode=3}
+y8L3XvawPxD4pwZX_meta.apply=y8L3XvawPxD4pwZX
+function y8L3XvawPxD4pwZX_meta.verify(v) return type(v)=="number" end
+local tDMkDLBPOw820U9ej3=function(s,a,b)
+ local id=196
+ local opcode=4
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bxor(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local tDMkDLBPOw820U9ej3_meta={id=196,opcode=4}
+tDMkDLBPOw820U9ej3_meta.apply=tDMkDLBPOw820U9ej3
+function tDMkDLBPOw820U9ej3_meta.verify(v) return type(v)=="number" end
+local bNhPAiKE4P=function(s,a,b)
+ local id=197
+ local opcode=5
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.band(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local bNhPAiKE4P_meta={id=197,opcode=5}
+bNhPAiKE4P_meta.apply=bNhPAiKE4P
+function bNhPAiKE4P_meta.verify(v) return type(v)=="number" end
+local c4It1GTPQ2TPIL8T=function(s,a,b)
+ local id=198
+ local opcode=6
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bor(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local c4It1GTPQ2TPIL8T_meta={id=198,opcode=6}
+c4It1GTPQ2TPIL8T_meta.apply=c4It1GTPQ2TPIL8T
+function c4It1GTPQ2TPIL8T_meta.verify(v) return type(v)=="number" end
+local qdgtAu_sx95Jviaapm=function(s,a,b)
+ local id=199
+ local opcode=7
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bnot(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local qdgtAu_sx95Jviaapm_meta={id=199,opcode=7}
+qdgtAu_sx95Jviaapm_meta.apply=qdgtAu_sx95Jviaapm
+function qdgtAu_sx95Jviaapm_meta.verify(v) return type(v)=="number" end
+local p4nh3pSkW64=function(s,a,b)
+ local id=200
+ local opcode=8
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.lshift(x,y%32)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local p4nh3pSkW64_meta={id=200,opcode=8}
+p4nh3pSkW64_meta.apply=p4nh3pSkW64
+function p4nh3pSkW64_meta.verify(v) return type(v)=="number" end
+local hHMZgLCDS1lm0o4AWz=function(s,a,b)
+ local id=201
+ local opcode=9
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.rshift(x,y%32)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local hHMZgLCDS1lm0o4AWz_meta={id=201,opcode=9}
+hHMZgLCDS1lm0o4AWz_meta.apply=hHMZgLCDS1lm0o4AWz
+function hHMZgLCDS1lm0o4AWz_meta.verify(v) return type(v)=="number" end
+local b75FK1VsSRkn7ot=function(s,a,b)
+ local id=202
+ local opcode=10
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=math.floor(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local b75FK1VsSRkn7ot_meta={id=202,opcode=10}
+b75FK1VsSRkn7ot_meta.apply=b75FK1VsSRkn7ot
+function b75FK1VsSRkn7ot_meta.verify(v) return type(v)=="number" end
+local cfh78zzIzxjMpx=function(s,a,b)
+ local id=203
+ local opcode=11
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=math.abs(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local cfh78zzIzxjMpx_meta={id=203,opcode=11}
+cfh78zzIzxjMpx_meta.apply=cfh78zzIzxjMpx
+function cfh78zzIzxjMpx_meta.verify(v) return type(v)=="number" end
+local jqnLTsPYMaZUI=function(s,a,b)
+ local id=204
+ local opcode=12
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x==y) and 1 or 0
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local jqnLTsPYMaZUI_meta={id=204,opcode=12}
+jqnLTsPYMaZUI_meta.apply=jqnLTsPYMaZUI
+function jqnLTsPYMaZUI_meta.verify(v) return type(v)=="number" end
+local r3cmrB3XE_dQyF=function(s,a,b)
+ local id=205
+ local opcode=13
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x~=y) and 1 or 0
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local r3cmrB3XE_dQyF_meta={id=205,opcode=13}
+r3cmrB3XE_dQyF_meta.apply=r3cmrB3XE_dQyF
+function r3cmrB3XE_dQyF_meta.verify(v) return type(v)=="number" end
+local v4B5Yc9d3StqG=function(s,a,b)
+ local id=206
+ local opcode=14
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local v4B5Yc9d3StqG_meta={id=206,opcode=14}
+v4B5Yc9d3StqG_meta.apply=v4B5Yc9d3StqG
+function v4B5Yc9d3StqG_meta.verify(v) return type(v)=="number" end
+local vfil4pAs=function(s,a,b)
+ local id=207
+ local opcode=15
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x+y)%256
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local vfil4pAs_meta={id=207,opcode=15}
+vfil4pAs_meta.apply=vfil4pAs
+function vfil4pAs_meta.verify(v) return type(v)=="number" end
+local tlExHSoBGO=function(s,a,b)
+ local id=208
+ local opcode=0
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x+y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local tlExHSoBGO_meta={id=208,opcode=0}
+tlExHSoBGO_meta.apply=tlExHSoBGO
+function tlExHSoBGO_meta.verify(v) return type(v)=="number" end
+local qjUFCPx7cfEIo=function(s,a,b)
+ local id=209
+ local opcode=1
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x-y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local qjUFCPx7cfEIo_meta={id=209,opcode=1}
+qjUFCPx7cfEIo_meta.apply=qjUFCPx7cfEIo
+function qjUFCPx7cfEIo_meta.verify(v) return type(v)=="number" end
+local fk85mcmPXPuMYy=function(s,a,b)
+ local id=210
+ local opcode=2
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x*y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local fk85mcmPXPuMYy_meta={id=210,opcode=2}
+fk85mcmPXPuMYy_meta.apply=fk85mcmPXPuMYy
+function fk85mcmPXPuMYy_meta.verify(v) return type(v)=="number" end
+local ea3JYYRWJarbp69=function(s,a,b)
+ local id=211
+ local opcode=3
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local m=(y==0 and 1 or y); local r=x%m
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local ea3JYYRWJarbp69_meta={id=211,opcode=3}
+ea3JYYRWJarbp69_meta.apply=ea3JYYRWJarbp69
+function ea3JYYRWJarbp69_meta.verify(v) return type(v)=="number" end
+local dfpNO4YVA=function(s,a,b)
+ local id=212
+ local opcode=4
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bxor(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local dfpNO4YVA_meta={id=212,opcode=4}
+dfpNO4YVA_meta.apply=dfpNO4YVA
+function dfpNO4YVA_meta.verify(v) return type(v)=="number" end
+local yeHH3Fa0AbLkDl=function(s,a,b)
+ local id=213
+ local opcode=5
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.band(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local yeHH3Fa0AbLkDl_meta={id=213,opcode=5}
+yeHH3Fa0AbLkDl_meta.apply=yeHH3Fa0AbLkDl
+function yeHH3Fa0AbLkDl_meta.verify(v) return type(v)=="number" end
+local dVchERApTQ=function(s,a,b)
+ local id=214
+ local opcode=6
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bor(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local dVchERApTQ_meta={id=214,opcode=6}
+dVchERApTQ_meta.apply=dVchERApTQ
+function dVchERApTQ_meta.verify(v) return type(v)=="number" end
+local fctjmzqRggaEB=function(s,a,b)
+ local id=215
+ local opcode=7
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bnot(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local fctjmzqRggaEB_meta={id=215,opcode=7}
+fctjmzqRggaEB_meta.apply=fctjmzqRggaEB
+function fctjmzqRggaEB_meta.verify(v) return type(v)=="number" end
+local iMt6m_4hXYA3w=function(s,a,b)
+ local id=216
+ local opcode=8
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.lshift(x,y%32)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local iMt6m_4hXYA3w_meta={id=216,opcode=8}
+iMt6m_4hXYA3w_meta.apply=iMt6m_4hXYA3w
+function iMt6m_4hXYA3w_meta.verify(v) return type(v)=="number" end
+local ggLGec5dFc7=function(s,a,b)
+ local id=217
+ local opcode=9
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.rshift(x,y%32)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local ggLGec5dFc7_meta={id=217,opcode=9}
+ggLGec5dFc7_meta.apply=ggLGec5dFc7
+function ggLGec5dFc7_meta.verify(v) return type(v)=="number" end
+local jRXPq7nfkZr=function(s,a,b)
+ local id=218
+ local opcode=10
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=math.floor(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local jRXPq7nfkZr_meta={id=218,opcode=10}
+jRXPq7nfkZr_meta.apply=jRXPq7nfkZr
+function jRXPq7nfkZr_meta.verify(v) return type(v)=="number" end
+local l8b3Vxkb83Bu2Pl=function(s,a,b)
+ local id=219
+ local opcode=11
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=math.abs(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local l8b3Vxkb83Bu2Pl_meta={id=219,opcode=11}
+l8b3Vxkb83Bu2Pl_meta.apply=l8b3Vxkb83Bu2Pl
+function l8b3Vxkb83Bu2Pl_meta.verify(v) return type(v)=="number" end
+local pmrLZUn7RX=function(s,a,b)
+ local id=220
+ local opcode=12
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x==y) and 1 or 0
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local pmrLZUn7RX_meta={id=220,opcode=12}
+pmrLZUn7RX_meta.apply=pmrLZUn7RX
+function pmrLZUn7RX_meta.verify(v) return type(v)=="number" end
+local mGnnUBby=function(s,a,b)
+ local id=221
+ local opcode=13
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x~=y) and 1 or 0
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local mGnnUBby_meta={id=221,opcode=13}
+mGnnUBby_meta.apply=mGnnUBby
+function mGnnUBby_meta.verify(v) return type(v)=="number" end
+local iuef_vV2ixjScK=function(s,a,b)
+ local id=222
+ local opcode=14
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local iuef_vV2ixjScK_meta={id=222,opcode=14}
+iuef_vV2ixjScK_meta.apply=iuef_vV2ixjScK
+function iuef_vV2ixjScK_meta.verify(v) return type(v)=="number" end
+local iiTp4GPi=function(s,a,b)
+ local id=223
+ local opcode=15
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x+y)%256
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local iiTp4GPi_meta={id=223,opcode=15}
+iiTp4GPi_meta.apply=iiTp4GPi
+function iiTp4GPi_meta.verify(v) return type(v)=="number" end
+local rpGk4A6B=function(s,a,b)
+ local id=224
+ local opcode=0
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x+y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local rpGk4A6B_meta={id=224,opcode=0}
+rpGk4A6B_meta.apply=rpGk4A6B
+function rpGk4A6B_meta.verify(v) return type(v)=="number" end
+local eHFsXopTWR=function(s,a,b)
+ local id=225
+ local opcode=1
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x-y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local eHFsXopTWR_meta={id=225,opcode=1}
+eHFsXopTWR_meta.apply=eHFsXopTWR
+function eHFsXopTWR_meta.verify(v) return type(v)=="number" end
+local qNpeGjf8KOI=function(s,a,b)
+ local id=226
+ local opcode=2
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x*y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local qNpeGjf8KOI_meta={id=226,opcode=2}
+qNpeGjf8KOI_meta.apply=qNpeGjf8KOI
+function qNpeGjf8KOI_meta.verify(v) return type(v)=="number" end
+local gZvFk9CWARn=function(s,a,b)
+ local id=227
+ local opcode=3
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local m=(y==0 and 1 or y); local r=x%m
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local gZvFk9CWARn_meta={id=227,opcode=3}
+gZvFk9CWARn_meta.apply=gZvFk9CWARn
+function gZvFk9CWARn_meta.verify(v) return type(v)=="number" end
+local mAjx1FZ6QFrR5sKu=function(s,a,b)
+ local id=228
+ local opcode=4
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bxor(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local mAjx1FZ6QFrR5sKu_meta={id=228,opcode=4}
+mAjx1FZ6QFrR5sKu_meta.apply=mAjx1FZ6QFrR5sKu
+function mAjx1FZ6QFrR5sKu_meta.verify(v) return type(v)=="number" end
+local qBxWq5QIle=function(s,a,b)
+ local id=229
+ local opcode=5
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.band(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local qBxWq5QIle_meta={id=229,opcode=5}
+qBxWq5QIle_meta.apply=qBxWq5QIle
+function qBxWq5QIle_meta.verify(v) return type(v)=="number" end
+local a9kMuMOdrLB=function(s,a,b)
+ local id=230
+ local opcode=6
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bor(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local a9kMuMOdrLB_meta={id=230,opcode=6}
+a9kMuMOdrLB_meta.apply=a9kMuMOdrLB
+function a9kMuMOdrLB_meta.verify(v) return type(v)=="number" end
+local gQO8KDU23=function(s,a,b)
+ local id=231
+ local opcode=7
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bnot(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local gQO8KDU23_meta={id=231,opcode=7}
+gQO8KDU23_meta.apply=gQO8KDU23
+function gQO8KDU23_meta.verify(v) return type(v)=="number" end
+local tZ92MnxBWCNICia=function(s,a,b)
+ local id=232
+ local opcode=8
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.lshift(x,y%32)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local tZ92MnxBWCNICia_meta={id=232,opcode=8}
+tZ92MnxBWCNICia_meta.apply=tZ92MnxBWCNICia
+function tZ92MnxBWCNICia_meta.verify(v) return type(v)=="number" end
+local oekMxierFzqkCt=function(s,a,b)
+ local id=233
+ local opcode=9
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.rshift(x,y%32)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local oekMxierFzqkCt_meta={id=233,opcode=9}
+oekMxierFzqkCt_meta.apply=oekMxierFzqkCt
+function oekMxierFzqkCt_meta.verify(v) return type(v)=="number" end
+local o5mNQhCEdkp=function(s,a,b)
+ local id=234
+ local opcode=10
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=math.floor(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local o5mNQhCEdkp_meta={id=234,opcode=10}
+o5mNQhCEdkp_meta.apply=o5mNQhCEdkp
+function o5mNQhCEdkp_meta.verify(v) return type(v)=="number" end
+local jDOKOXioq0hcvRz=function(s,a,b)
+ local id=235
+ local opcode=11
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=math.abs(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local jDOKOXioq0hcvRz_meta={id=235,opcode=11}
+jDOKOXioq0hcvRz_meta.apply=jDOKOXioq0hcvRz
+function jDOKOXioq0hcvRz_meta.verify(v) return type(v)=="number" end
+local talsgIfr=function(s,a,b)
+ local id=236
+ local opcode=12
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x==y) and 1 or 0
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local talsgIfr_meta={id=236,opcode=12}
+talsgIfr_meta.apply=talsgIfr
+function talsgIfr_meta.verify(v) return type(v)=="number" end
+local yc70q2WMOVPKq=function(s,a,b)
+ local id=237
+ local opcode=13
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x~=y) and 1 or 0
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local yc70q2WMOVPKq_meta={id=237,opcode=13}
+yc70q2WMOVPKq_meta.apply=yc70q2WMOVPKq
+function yc70q2WMOVPKq_meta.verify(v) return type(v)=="number" end
+local qC5q9XIVZV2utR=function(s,a,b)
+ local id=238
+ local opcode=14
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local qC5q9XIVZV2utR_meta={id=238,opcode=14}
+qC5q9XIVZV2utR_meta.apply=qC5q9XIVZV2utR
+function qC5q9XIVZV2utR_meta.verify(v) return type(v)=="number" end
+local yw0npjQr=function(s,a,b)
+ local id=239
+ local opcode=15
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x+y)%256
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local yw0npjQr_meta={id=239,opcode=15}
+yw0npjQr_meta.apply=yw0npjQr
+function yw0npjQr_meta.verify(v) return type(v)=="number" end
+local guPEnqC9uWJfc=function(s,a,b)
+ local id=240
+ local opcode=0
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x+y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local guPEnqC9uWJfc_meta={id=240,opcode=0}
+guPEnqC9uWJfc_meta.apply=guPEnqC9uWJfc
+function guPEnqC9uWJfc_meta.verify(v) return type(v)=="number" end
+local v9YDnv0tgwaGhQN=function(s,a,b)
+ local id=241
+ local opcode=1
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x-y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local v9YDnv0tgwaGhQN_meta={id=241,opcode=1}
+v9YDnv0tgwaGhQN_meta.apply=v9YDnv0tgwaGhQN
+function v9YDnv0tgwaGhQN_meta.verify(v) return type(v)=="number" end
+local oLruBKCRH=function(s,a,b)
+ local id=242
+ local opcode=2
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x*y
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local oLruBKCRH_meta={id=242,opcode=2}
+oLruBKCRH_meta.apply=oLruBKCRH
+function oLruBKCRH_meta.verify(v) return type(v)=="number" end
+local kNWfEa8PIgKhUUPX=function(s,a,b)
+ local id=243
+ local opcode=3
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local m=(y==0 and 1 or y); local r=x%m
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local kNWfEa8PIgKhUUPX_meta={id=243,opcode=3}
+kNWfEa8PIgKhUUPX_meta.apply=kNWfEa8PIgKhUUPX
+function kNWfEa8PIgKhUUPX_meta.verify(v) return type(v)=="number" end
+local cpnFT6ttpG5=function(s,a,b)
+ local id=244
+ local opcode=4
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bxor(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local cpnFT6ttpG5_meta={id=244,opcode=4}
+cpnFT6ttpG5_meta.apply=cpnFT6ttpG5
+function cpnFT6ttpG5_meta.verify(v) return type(v)=="number" end
+local yDZs9LlRQZFkbEM=function(s,a,b)
+ local id=245
+ local opcode=5
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.band(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local yDZs9LlRQZFkbEM_meta={id=245,opcode=5}
+yDZs9LlRQZFkbEM_meta.apply=yDZs9LlRQZFkbEM
+function yDZs9LlRQZFkbEM_meta.verify(v) return type(v)=="number" end
+local uvrEj65AKyxIoVkC=function(s,a,b)
+ local id=246
+ local opcode=6
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bor(x,y)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local uvrEj65AKyxIoVkC_meta={id=246,opcode=6}
+uvrEj65AKyxIoVkC_meta.apply=uvrEj65AKyxIoVkC
+function uvrEj65AKyxIoVkC_meta.verify(v) return type(v)=="number" end
+local pqzIbXj5HeAWRr_o=function(s,a,b)
+ local id=247
+ local opcode=7
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.bnot(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local pqzIbXj5HeAWRr_o_meta={id=247,opcode=7}
+pqzIbXj5HeAWRr_o_meta.apply=pqzIbXj5HeAWRr_o
+function pqzIbXj5HeAWRr_o_meta.verify(v) return type(v)=="number" end
+local tMsVxJwIoVqNmM=function(s,a,b)
+ local id=248
+ local opcode=8
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.lshift(x,y%32)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local tMsVxJwIoVqNmM_meta={id=248,opcode=8}
+tMsVxJwIoVqNmM_meta.apply=tMsVxJwIoVqNmM
+function tMsVxJwIoVqNmM_meta.verify(v) return type(v)=="number" end
+local siM4X3wwK=function(s,a,b)
+ local id=249
+ local opcode=9
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=bit32.rshift(x,y%32)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local siM4X3wwK_meta={id=249,opcode=9}
+siM4X3wwK_meta.apply=siM4X3wwK
+function siM4X3wwK_meta.verify(v) return type(v)=="number" end
+local rRbKSCbSyhEFq6Kz=function(s,a,b)
+ local id=250
+ local opcode=10
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=math.floor(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local rRbKSCbSyhEFq6Kz_meta={id=250,opcode=10}
+rRbKSCbSyhEFq6Kz_meta.apply=rRbKSCbSyhEFq6Kz
+function rRbKSCbSyhEFq6Kz_meta.verify(v) return type(v)=="number" end
+local zuy6hFcx=function(s,a,b)
+ local id=251
+ local opcode=11
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=math.abs(x)
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local zuy6hFcx_meta={id=251,opcode=11}
+zuy6hFcx_meta.apply=zuy6hFcx
+function zuy6hFcx_meta.verify(v) return type(v)=="number" end
+local xDSTLUSwOT=function(s,a,b)
+ local id=252
+ local opcode=12
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x==y) and 1 or 0
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local xDSTLUSwOT_meta={id=252,opcode=12}
+xDSTLUSwOT_meta.apply=xDSTLUSwOT
+function xDSTLUSwOT_meta.verify(v) return type(v)=="number" end
+local oTfnRM9N51gBfX2V=function(s,a,b)
+ local id=253
+ local opcode=13
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x~=y) and 1 or 0
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local oTfnRM9N51gBfX2V_meta={id=253,opcode=13}
+oTfnRM9N51gBfX2V_meta.apply=oTfnRM9N51gBfX2V
+function oTfnRM9N51gBfX2V_meta.verify(v) return type(v)=="number" end
+local xduJes4QgRwR=function(s,a,b)
+ local id=254
+ local opcode=14
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=x
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local xduJes4QgRwR_meta={id=254,opcode=14}
+xduJes4QgRwR_meta.apply=xduJes4QgRwR
+function xduJes4QgRwR_meta.verify(v) return type(v)=="number" end
+local oIY2nfAnPL=function(s,a,b)
+ local id=255
+ local opcode=15
+ local x=a or 0
+ local y=b or 0
+ local tag=(id*31+opcode*17+y)%256
+ if tag<0 then error("Mnx VM tag fault") end
+ local r=(x+y)%256
+ if r<0 then r=r+256 end
+ r=r%4294967296
+ s[#s+1]=r
+ return r
+end
+local oIY2nfAnPL_meta={id=255,opcode=15}
+oIY2nfAnPL_meta.apply=oIY2nfAnPL
+function oIY2nfAnPL_meta.verify(v) return type(v)=="number" end
+local fv91qXApuMQdpE5D3={}
+fv91qXApuMQdpE5D3[193]=h1CcIpWJi
+fv91qXApuMQdpE5D3[46]=tjMZeVOzbo
+fv91qXApuMQdpE5D3[25]=o_ab544fnmS742B
+fv91qXApuMQdpE5D3[148]=d8PFNMtCeZdkhPmFc0
+fv91qXApuMQdpE5D3[7]=lg3rySwXXSulphNUmu
+fv91qXApuMQdpE5D3[169]=wtuYfMYyN_Qr_3RaMi
+fv91qXApuMQdpE5D3[125]=g6H444lkP_Z2bPRK
+fv91qXApuMQdpE5D3[196]=gmFFHpmyqZf7pbu
+fv91qXApuMQdpE5D3[93]=pAAnAIpvRkizrUE
+fv91qXApuMQdpE5D3[97]=adwdE8mC_f
+fv91qXApuMQdpE5D3[180]=twEvpmU4ElUZ3yC
+fv91qXApuMQdpE5D3[249]=fesgsa7WTv8ApU43W
+fv91qXApuMQdpE5D3[252]=vdGl25FAbj3Y0C
+fv91qXApuMQdpE5D3[33]=wY7KZI9Dhnpp
+fv91qXApuMQdpE5D3[3]=moeEEuI8Slnd1mq
+fv91qXApuMQdpE5D3[230]=rv2BbwixffyF8kx5wh
+fv91qXApuMQdpE5D3[121]=dtP08zoYuX
+fv91qXApuMQdpE5D3[105]=bRLHyfclxSybgJm34
+fv91qXApuMQdpE5D3[69]=cPA1Mn0rc
+fv91qXApuMQdpE5D3[31]=jQBP5Le0WoMY
+fv91qXApuMQdpE5D3[38]=do_yLcVJPW
+fv91qXApuMQdpE5D3[27]=smo48oLIi2B6bZAcIh
+fv91qXApuMQdpE5D3[5]=jzN3vPiSu
+fv91qXApuMQdpE5D3[178]=t7gDkEvBFF
+fv91qXApuMQdpE5D3[238]=gWs3mtknr
+fv91qXApuMQdpE5D3[50]=rTBHIBdPZpiXQ
+fv91qXApuMQdpE5D3[1]=iDsyFnHHnnG
+fv91qXApuMQdpE5D3[173]=qRxP3LQAkLTRLIt
+fv91qXApuMQdpE5D3[21]=cMNUPXqgHNn30_oKFC
+fv91qXApuMQdpE5D3[34]=huBcrUqd3Va3zm
+fv91qXApuMQdpE5D3[175]=s9qcEQ0D1BGgviM
+fv91qXApuMQdpE5D3[47]=qEk6TGy8dDEzQ1
+fv91qXApuMQdpE5D3[43]=rrjkOJ4rtiRG
+fv91qXApuMQdpE5D3[91]=wypZ98TCc_CF8cil9
+fv91qXApuMQdpE5D3[146]=ahlfqQ1si
+fv91qXApuMQdpE5D3[164]=iYuEh4rnUrlH
+fv91qXApuMQdpE5D3[23]=u2g8ZD9gE_R0jInNu
+fv91qXApuMQdpE5D3[51]=fUmTx8L7Q9UZsw7V
+fv91qXApuMQdpE5D3[134]=dRqFa4DuIKCDAJ4
+fv91qXApuMQdpE5D3[49]=cPWPmO_mtN
+fv91qXApuMQdpE5D3[45]=y59xiL_qjouUM
+fv91qXApuMQdpE5D3[133]=ajkHjEd_5dSEb0Bn7
+fv91qXApuMQdpE5D3[246]=aFeCiGoFpib
+fv91qXApuMQdpE5D3[126]=aVpayS2B0COvJHnbC
+fv91qXApuMQdpE5D3[170]=a1ULkU6w_3Lai
+fv91qXApuMQdpE5D3[153]=ymwz2r0nsrF4MG
+fv91qXApuMQdpE5D3[101]=tYilYd9tay
+fv91qXApuMQdpE5D3[111]=l998QhdWixYe9QpHa
+fv91qXApuMQdpE5D3[19]=d3I0eyd13
+fv91qXApuMQdpE5D3[102]=zsFkH_HruI7Nun5
+fv91qXApuMQdpE5D3[73]=ojfB1hfye9
+fv91qXApuMQdpE5D3[250]=acfYAWe_XawClxfGVH
+fv91qXApuMQdpE5D3[247]=jvh2JxBD_lG9dMzv8_
+fv91qXApuMQdpE5D3[135]=leDjjSRkCD3w
+fv91qXApuMQdpE5D3[53]=nUchs4ANNhcBiTjU
+fv91qXApuMQdpE5D3[195]=z7PfoSd3R
+fv91qXApuMQdpE5D3[117]=je6PoP1wxzeM
+fv91qXApuMQdpE5D3[18]=jlmaUrYS1HWKaON
+fv91qXApuMQdpE5D3[36]=xIRXx5KTSEc71CDv
+fv91qXApuMQdpE5D3[109]=ig7yt_XAjgPHlcLv40
+fv91qXApuMQdpE5D3[114]=gAVmnCygT
+fv91qXApuMQdpE5D3[81]=dI9wb6F3XZ
+fv91qXApuMQdpE5D3[254]=tESB4zvZ9UCbel0mC1
+fv91qXApuMQdpE5D3[85]=i1Xc6wzv_UnyE7Yy4D
+fv91qXApuMQdpE5D3[99]=dXPXJonFltn05klQd
+fv91qXApuMQdpE5D3[75]=bWegW_pEmp6e74
+fv91qXApuMQdpE5D3[137]=wTYf21__cK3hZYD
+fv91qXApuMQdpE5D3[236]=wWr6Tb7q2gRALzznhe
+fv91qXApuMQdpE5D3[96]=vhaYj91c88JgrHYYk
+fv91qXApuMQdpE5D3[149]=mQUtkzxk93Uni
+fv91qXApuMQdpE5D3[17]=iHDK3mO6RBzOE
+fv91qXApuMQdpE5D3[187]=l2solP4DOWB9m_Bl
+fv91qXApuMQdpE5D3[11]=n3AMhG9nv9Td
+fv91qXApuMQdpE5D3[87]=lT27bXllavO_
+fv91qXApuMQdpE5D3[41]=gxj_MFsyAuppe
+fv91qXApuMQdpE5D3[40]=mtbdGE62x_iFo
+fv91qXApuMQdpE5D3[216]=cXlsw9iEf
+fv91qXApuMQdpE5D3[122]=z2TF18k4mQ8cs
+fv91qXApuMQdpE5D3[6]=zWKdR21mk0FMkJoIA2
+fv91qXApuMQdpE5D3[123]=eFy7UA6FMy51BeIbcG
+fv91qXApuMQdpE5D3[29]=qK_QTko_226kY
+fv91qXApuMQdpE5D3[104]=fpmAEpKjsuQ1m6tn
+fv91qXApuMQdpE5D3[161]=lt96vVNPmLV
+fv91qXApuMQdpE5D3[145]=jLE1Du8xdNhiShzns5
+fv91qXApuMQdpE5D3[168]=dpGM54fhiJnorAet
+fv91qXApuMQdpE5D3[179]=g3YGr4Z8BcArYu
+fv91qXApuMQdpE5D3[158]=k0mkK1qM2TaRoUDf
+fv91qXApuMQdpE5D3[44]=ePZSzmtXDnx
+fv91qXApuMQdpE5D3[176]=kXwb8D_cKNGkUKsTr
+fv91qXApuMQdpE5D3[233]=xqSNCBjzYGfok4pN6
+fv91qXApuMQdpE5D3[241]=ayd3McH_NJgZN
+fv91qXApuMQdpE5D3[200]=gg8un91XSndTrEi
+fv91qXApuMQdpE5D3[202]=ghhiLI90RzNeL3xE74
+fv91qXApuMQdpE5D3[166]=nSndrQKHGuzyDh
+fv91qXApuMQdpE5D3[157]=s5zvIGjFQgWAN
+fv91qXApuMQdpE5D3[127]=y5EUb9Jj0j3nz4j1J
+fv91qXApuMQdpE5D3[15]=nvLXvP6TzCK5oIqO
+fv91qXApuMQdpE5D3[141]=xFiqqve1dVV
+fv91qXApuMQdpE5D3[65]=wsuT333mN9gfFXIZy
+fv91qXApuMQdpE5D3[115]=y3sn7q94tHmUypVd
+fv91qXApuMQdpE5D3[191]=avdL6rbutyS2n
+fv91qXApuMQdpE5D3[209]=eIwHk6OYwSxa8rS9
+fv91qXApuMQdpE5D3[79]=uoMgvow7UZJ6V
+fv91qXApuMQdpE5D3[204]=d6svLa6Cdk
+fv91qXApuMQdpE5D3[140]=tFjKiJnBiLpZ6L0
+fv91qXApuMQdpE5D3[98]=h6OmQIQCZJuz8
+fv91qXApuMQdpE5D3[9]=mMYP7Inyty8TDLya
+fv91qXApuMQdpE5D3[189]=za2ViCUjsV
+fv91qXApuMQdpE5D3[71]=e8ozL9jLVQ
+fv91qXApuMQdpE5D3[181]=c9oTPL3A2BJkuc
+fv91qXApuMQdpE5D3[66]=f8kHBOL1dhM
+fv91qXApuMQdpE5D3[154]=dnS28AvLl2
+fv91qXApuMQdpE5D3[203]=jParMhXqeDU
+fv91qXApuMQdpE5D3[143]=ga0AxoyQY6un52ADv
+fv91qXApuMQdpE5D3[165]=q7tXULHJf3kOUU
+fv91qXApuMQdpE5D3[32]=kz4QHnrv0Yc
+fv91qXApuMQdpE5D3[118]=ewvcN42GpSuz3sci2c
+fv91qXApuMQdpE5D3[42]=rbkdNzKKL
+fv91qXApuMQdpE5D3[57]=tZWXA3qxcH0G
+fv91qXApuMQdpE5D3[159]=wYfpywUlGBqPhqfX2n
+fv91qXApuMQdpE5D3[95]=ePiFWiPZ_MBz
+fv91qXApuMQdpE5D3[251]=fvUs2VHHGUMjAh
+fv91qXApuMQdpE5D3[128]=ppcSfGibZ7S
+fv91qXApuMQdpE5D3[151]=obqMu3g5oAtmd6
+fv91qXApuMQdpE5D3[155]=eK8VEnvTFq6c_dJNt
+fv91qXApuMQdpE5D3[221]=pXOQQG4EB39OUHNV3
+fv91qXApuMQdpE5D3[61]=eKnZNxrmC6I1nspJIG
+fv91qXApuMQdpE5D3[129]=eCMqnYgLKrvS
+fv91qXApuMQdpE5D3[54]=m6BOgvPKhIK8U
+fv91qXApuMQdpE5D3[190]=j6GcR8HwtsnN1o9
+fv91qXApuMQdpE5D3[55]=iBCNWqoko6kk
+fv91qXApuMQdpE5D3[234]=p2sii1bEZBBc1_MxI
+fv91qXApuMQdpE5D3[30]=g7Wj3ncvcvMVdt
+fv91qXApuMQdpE5D3[62]=lgi9lwN9dvkRqWM
+fv91qXApuMQdpE5D3[210]=aY3cMknmUDY
+fv91qXApuMQdpE5D3[132]=r5MwlF4gf9sVN
+fv91qXApuMQdpE5D3[198]=y75O37iqKdJTGFqy9
+fv91qXApuMQdpE5D3[156]=iXkFwOfbYv_uJi
+fv91qXApuMQdpE5D3[16]=k641qxKkLfK
+fv91qXApuMQdpE5D3[68]=gD4jbfBgPB66iU
+fv91qXApuMQdpE5D3[8]=lmo8GENb8gm7o5L4i
+fv91qXApuMQdpE5D3[235]=ygFyfN4AYTRUEJV
+fv91qXApuMQdpE5D3[214]=m7YzM6vv7nZkQtqT
+fv91qXApuMQdpE5D3[215]=rXKFch9snVgCf
+fv91qXApuMQdpE5D3[225]=hWE6TjSTuY
+fv91qXApuMQdpE5D3[228]=fz2gPkmdps7Bu1zXE
+fv91qXApuMQdpE5D3[74]=x60GLyZeokgNKg
+fv91qXApuMQdpE5D3[248]=lOW_RITN_j9Bi_A
+fv91qXApuMQdpE5D3[131]=zZ73XcA_QwQ8
+fv91qXApuMQdpE5D3[78]=raa_l3GQI
+fv91qXApuMQdpE5D3[89]=hto03ZTB5fU
+fv91qXApuMQdpE5D3[240]=lajVXsfcWL6p_aS
+fv91qXApuMQdpE5D3[80]=dyQHmZFYsc
+fv91qXApuMQdpE5D3[222]=lagS0Ik4MoXczGsFs
+fv91qXApuMQdpE5D3[113]=hopPOb6aHmWwl4y
+fv91qXApuMQdpE5D3[185]=psP0XsL4hF5zqSxKR3
+fv91qXApuMQdpE5D3[64]=rW_4jUzaqyEUOUH
+fv91qXApuMQdpE5D3[142]=yT5BrF28x3xYBbwEy
+fv91qXApuMQdpE5D3[39]=m9vdRaMjEEvw8eHA2a
+fv91qXApuMQdpE5D3[167]=rRUvg9AS6jjKbYih_s
+fv91qXApuMQdpE5D3[13]=nsI6LJAyN1P7s
+fv91qXApuMQdpE5D3[136]=ibnVRJ1qFNH1gL
+fv91qXApuMQdpE5D3[184]=nXObu_fpmv
+fv91qXApuMQdpE5D3[152]=ba4gip9Zw1LWbZ5
+fv91qXApuMQdpE5D3[59]=p6qYlk_2DRLaMY
+fv91qXApuMQdpE5D3[213]=r7kRxt9YIcd
+fv91qXApuMQdpE5D3[103]=ffJ07EtREo
+fv91qXApuMQdpE5D3[92]=sAHeCRN8xx
+fv91qXApuMQdpE5D3[162]=t2TdEHhbp_VSMacz_d
+fv91qXApuMQdpE5D3[100]=bS59UsDnS_de
+fv91qXApuMQdpE5D3[2]=a5XuoqJzacoU2hi0
+fv91qXApuMQdpE5D3[60]=jJrXRG8jUVwmoG
+fv91qXApuMQdpE5D3[90]=irIavYH5RW0awrn
+fv91qXApuMQdpE5D3[138]=ykMCMybLXoaTmGRf
+fv91qXApuMQdpE5D3[35]=hK8vbZKbc90t5
+fv91qXApuMQdpE5D3[124]=xVqLsc6mOgXz3
+fv91qXApuMQdpE5D3[197]=rmC5bUZTqnSia_c
+fv91qXApuMQdpE5D3[94]=q87eolhj43lfeJ
+fv91qXApuMQdpE5D3[37]=qSivbDBaD8xUNq
+fv91qXApuMQdpE5D3[120]=sMWNLCcq6vC
+fv91qXApuMQdpE5D3[174]=b_lEniZTaa
+fv91qXApuMQdpE5D3[199]=milA16gJKgB_dK
+fv91qXApuMQdpE5D3[24]=aBCT2xQe9f20608V2
+fv91qXApuMQdpE5D3[201]=uO9uuRGWUCzKkUU
+fv91qXApuMQdpE5D3[186]=ho1eIO5GaoeVu
+fv91qXApuMQdpE5D3[48]=yJHsNh3Wb4J0bK
+fv91qXApuMQdpE5D3[67]=lvTCgxbxLay
+fv91qXApuMQdpE5D3[211]=tlhdZ021STomhK
+fv91qXApuMQdpE5D3[139]=yzJ734ESCMJUkn
+fv91qXApuMQdpE5D3[245]=nyKmAevfW
+fv91qXApuMQdpE5D3[171]=i44itjX_ku
+fv91qXApuMQdpE5D3[223]=yrVJ975W6NHKt
+fv91qXApuMQdpE5D3[219]=vTmDu4qFrg_3
+fv91qXApuMQdpE5D3[26]=rlnrrYZx8_t
+fv91qXApuMQdpE5D3[0]=tPPTHNsrpOlQi2xh
+fv91qXApuMQdpE5D3[4]=y8L3XvawPxD4pwZX
+fv91qXApuMQdpE5D3[106]=tDMkDLBPOw820U9ej3
+fv91qXApuMQdpE5D3[70]=bNhPAiKE4P
+fv91qXApuMQdpE5D3[88]=c4It1GTPQ2TPIL8T
+fv91qXApuMQdpE5D3[52]=qdgtAu_sx95Jviaapm
+fv91qXApuMQdpE5D3[107]=p4nh3pSkW64
+fv91qXApuMQdpE5D3[192]=hHMZgLCDS1lm0o4AWz
+fv91qXApuMQdpE5D3[227]=b75FK1VsSRkn7ot
+fv91qXApuMQdpE5D3[116]=cfh78zzIzxjMpx
+fv91qXApuMQdpE5D3[76]=jqnLTsPYMaZUI
+fv91qXApuMQdpE5D3[217]=r3cmrB3XE_dQyF
+fv91qXApuMQdpE5D3[194]=v4B5Yc9d3StqG
+fv91qXApuMQdpE5D3[224]=vfil4pAs
+fv91qXApuMQdpE5D3[183]=tlExHSoBGO
+fv91qXApuMQdpE5D3[72]=qjUFCPx7cfEIo
+fv91qXApuMQdpE5D3[58]=fk85mcmPXPuMYy
+fv91qXApuMQdpE5D3[229]=ea3JYYRWJarbp69
+fv91qXApuMQdpE5D3[112]=dfpNO4YVA
+fv91qXApuMQdpE5D3[22]=yeHH3Fa0AbLkDl
+fv91qXApuMQdpE5D3[237]=dVchERApTQ
+fv91qXApuMQdpE5D3[28]=fctjmzqRggaEB
+fv91qXApuMQdpE5D3[83]=iMt6m_4hXYA3w
+fv91qXApuMQdpE5D3[243]=ggLGec5dFc7
+fv91qXApuMQdpE5D3[212]=jRXPq7nfkZr
+fv91qXApuMQdpE5D3[84]=l8b3Vxkb83Bu2Pl
+fv91qXApuMQdpE5D3[163]=pmrLZUn7RX
+fv91qXApuMQdpE5D3[242]=mGnnUBby
+fv91qXApuMQdpE5D3[177]=iuef_vV2ixjScK
+fv91qXApuMQdpE5D3[231]=iiTp4GPi
+fv91qXApuMQdpE5D3[12]=rpGk4A6B
+fv91qXApuMQdpE5D3[218]=eHFsXopTWR
+fv91qXApuMQdpE5D3[63]=qNpeGjf8KOI
+fv91qXApuMQdpE5D3[208]=gZvFk9CWARn
+fv91qXApuMQdpE5D3[147]=mAjx1FZ6QFrR5sKu
+fv91qXApuMQdpE5D3[20]=qBxWq5QIle
+fv91qXApuMQdpE5D3[86]=a9kMuMOdrLB
+fv91qXApuMQdpE5D3[239]=gQO8KDU23
+fv91qXApuMQdpE5D3[10]=tZ92MnxBWCNICia
+fv91qXApuMQdpE5D3[110]=oekMxierFzqkCt
+fv91qXApuMQdpE5D3[220]=o5mNQhCEdkp
+fv91qXApuMQdpE5D3[253]=jDOKOXioq0hcvRz
+fv91qXApuMQdpE5D3[206]=talsgIfr
+fv91qXApuMQdpE5D3[14]=yc70q2WMOVPKq
+fv91qXApuMQdpE5D3[150]=qC5q9XIVZV2utR
+fv91qXApuMQdpE5D3[255]=yw0npjQr
+fv91qXApuMQdpE5D3[207]=guPEnqC9uWJfc
+fv91qXApuMQdpE5D3[130]=v9YDnv0tgwaGhQN
+fv91qXApuMQdpE5D3[82]=oLruBKCRH
+fv91qXApuMQdpE5D3[56]=kNWfEa8PIgKhUUPX
+fv91qXApuMQdpE5D3[108]=cpnFT6ttpG5
+fv91qXApuMQdpE5D3[182]=yDZs9LlRQZFkbEM
+fv91qXApuMQdpE5D3[77]=uvrEj65AKyxIoVkC
+fv91qXApuMQdpE5D3[244]=pqzIbXj5HeAWRr_o
+fv91qXApuMQdpE5D3[205]=tMsVxJwIoVqNmM
+fv91qXApuMQdpE5D3[160]=siM4X3wwK
+fv91qXApuMQdpE5D3[172]=rRbKSCbSyhEFq6Kz
+fv91qXApuMQdpE5D3[144]=zuy6hFcx
+fv91qXApuMQdpE5D3[119]=xDSTLUSwOT
+fv91qXApuMQdpE5D3[232]=oTfnRM9N51gBfX2V
+fv91qXApuMQdpE5D3[226]=xduJes4QgRwR
+fv91qXApuMQdpE5D3[188]=oIY2nfAnPL
+local q57glZ9QsV={
+{7,190,186},
+{7,8,191},
+{7,17,154},
+{7,251,200},
+{7,167,7},
+{7,224,231},
+{7,4,121},
+{7,28,121},
+{7,122,49},
+{7,241,116},
+{7,250,230},
+{7,18,252},
+{7,179,255},
+{7,241,90},
+{7,139,201},
+{7,227,5},
+{7,153,52},
+{7,70,132},
+{7,88,99},
+{7,192,3},
+{7,116,60},
+{7,45,192},
+{7,34,77},
+{7,38,159},
+{7,60,146},
+{7,142,7},
+{7,46,210},
+{7,133,245},
+{7,26,68},
+{7,115,61},
+{7,73,150},
+{7,27,181},
+{7,184,98},
+{7,9,201},
+{7,4,145},
+{7,186,26},
+{7,226,141},
+{7,44,3},
+{7,110,219},
+{7,31,192},
+{7,94,204},
+{7,94,222},
+{7,5,194},
+{7,87,211},
+{7,176,183},
+{7,191,249},
+{7,42,199},
+{7,11,38},
+{7,141,190},
+{7,53,8},
+{7,130,17},
+{7,192,251},
+{7,60,167},
+{7,9,224},
+{7,108,4},
+{7,97,28},
+{7,211,122},
+{7,104,241},
+{7,208,250},
+{7,151,18},
+{7,176,179},
+{7,221,241},
+{7,136,139},
+{7,135,227},
+{7,203,153},
+{7,35,70},
+{7,80,88},
+{7,242,192},
+{7,191,116},
+{7,86,45},
+{7,146,34},
+{7,78,38},
+{7,36,60},
+{7,23,142},
+{7,97,46},
+{7,135,133},
+{7,64,26},
+{7,106,115},
+{7,249,73},
+{7,230,27},
+{7,201,184},
+{7,126,9},
+{7,34,4},
+{7,178,186},
+{7,11,226},
+{7,177,44},
+{7,177,110},
+{7,42,31},
+{7,18,94},
+{7,182,94},
+{7,45,5},
+{7,161,87},
+{7,213,176},
+{7,7,191},
+{7,52,42},
+{7,102,11},
+{7,12,190},
+{7,249,8},
+{7,159,17},
+{7,66,251},
+{7,237,167},
+{7,23,224},
+{7,55,4},
+{7,151,141},
+{7,33,53},
+{7,148,130},
+{7,56,192},
+{7,179,60},
+{7,70,9},
+{7,42,108},
+{7,239,97},
+{7,211,211},
+{7,151,104},
+{7,27,208},
+{7,51,151},
+{7,22,176},
+{7,60,221},
+{7,4,136},
+{7,110,135},
+{7,29,203},
+{7,162,35},
+{7,148,80},
+{7,54,242},
+{7,122,191},
+{7,244,86},
+{7,182,146},
+{7,162,78},
+{7,132,36},
+{7,90,23},
+{7,128,97},
+{7,95,135},
+{7,89,64},
+{7,53,106},
+{7,23,249},
+{7,83,230},
+{7,51,201},
+{7,75,126},
+{7,138,34},
+{7,57,178},
+{7,201,11},
+{7,119,177},
+{7,242,177},
+{7,92,42},
+{7,50,18},
+{7,196,182},
+{7,107,45},
+{7,150,161},
+{7,107,213},
+{7,225,7},
+{7,124,52},
+{7,126,102},
+{7,93,12},
+{7,207,249},
+{7,65,159},
+{7,164,66},
+{7,97,237},
+{7,199,151},
+{7,211,33},
+{7,159,148},
+{7,199,56},
+{7,56,179},
+{7,139,70},
+{7,237,42},
+{7,133,239},
+{7,82,211},
+{7,237,151},
+{7,227,27},
+{7,146,51},
+{7,68,22},
+{7,60,60},
+{7,141,4},
+{7,234,110},
+{7,243,29},
+{7,196,162},
+{7,73,148},
+{7,56,54},
+{7,4,122},
+{7,69,244},
+{7,22,182},
+{7,44,162},
+{7,54,132},
+{7,47,90},
+{7,44,128},
+{7,167,95},
+{7,237,89},
+{7,52,53},
+{7,240,23},
+{7,60,83},
+{7,255,51},
+{7,104,75},
+{7,123,138},
+{7,75,57},
+{7,82,201},
+{7,42,119},
+{7,206,242},
+{7,7,92},
+{7,206,50},
+{7,205,196},
+{7,238,107},
+{7,198,150},
+{7,179,107},
+{7,20,225},
+{7,50,124},
+{7,19,126},
+{7,177,93},
+{7,189,207},
+{7,63,65},
+{7,76,164},
+{7,240,97},
+{7,167,151},
+{7,162,33},
+{7,33,148},
+{7,120,56},
+}
+local nbooK609JH4N18Za2p=0
+for i=1,#pMznofxDutN1 do nbooK609JH4N18Za2p=((nbooK609JH4N18Za2p*131)+string.byte(pMznofxDutN1,i))%2147483647 end
+for i=1,#sC64_vtHo4 do nbooK609JH4N18Za2p=((nbooK609JH4N18Za2p*137)+string.byte(sC64_vtHo4,i))%2147483647 end
+local b2O_pgbmG={}
+local iokuPX4nxvw19wnt={}
+for i=1,#pMznofxDutN1,2 do iokuPX4nxvw19wnt[#iokuPX4nxvw19wnt+1]=tonumber(string.sub(pMznofxDutN1,i,i+1),16) end
+for i=1,#sC64_vtHo4,2 do iokuPX4nxvw19wnt[#iokuPX4nxvw19wnt+1]=tonumber(string.sub(sC64_vtHo4,i,i+1),16) end
+for wY5lG_NlYnhPk7uvC=1,#q57glZ9QsV do
+ local hlDEzHVCSgn7oCmoid=q57glZ9QsV[wY5lG_NlYnhPk7uvC]
+ local rlLwdHOrqiRIwq=hlDEzHVCSgn7oCmoid[1]
+ local jxiwTWmbZdw=hlDEzHVCSgn7oCmoid[2]
+ local fv91qXApuMQdpE5D3=hlDEzHVCSgn7oCmoid[3]
+ local b2O_pgbmG[wY5lG_NlYnhPk7uvC]=fv91qXApuMQdpE5D3[jxiwTWmbZdw](iokuPX4nxvw19wnt,rlLwdHOrqiRIwq,fv91qXApuMQdpE5D3)
+end
+for i=1,#iokuPX4nxvw19wnt do iokuPX4nxvw19wnt[i]=bit32.bxor(iokuPX4nxvw19wnt[i],199) end
+local cC5Wb3E9iVpK42yy0R={}
+for i=1,#iokuPX4nxvw19wnt do cC5Wb3E9iVpK42yy0R[i]=string.char(bit32.bxor(iokuPX4nxvw19wnt[i],141)) end
+local fm3dCglnt70,rPC_Rz4J4YbKgbO3hP=loadstring(table.concat(cC5Wb3E9iVpK42yy0R))
+if fm3dCglnt70 then return fm3dCglnt70() end
+error("Mnx V4 runtime error: "..tostring(rPC_Rz4J4YbKgbO3hP))
